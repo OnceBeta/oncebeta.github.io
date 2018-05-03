@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Javascript,LaTeX,Node.js," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="引子作为一款以简洁为宗旨的标记语言，HTML的扩展性并不强，其自身也不具有强大的功能。要使用HTML渲染出漂亮的数学公式可以说并非轻而易举，因此大多数人使用截图上传的方式实现在网页上展示数学公式。但前阵子浏览Wikipedia，便偶然想到一个问题此多的数学公式，如果都使用截图上传的方式来展现，岂不是太费力气了。这显然是不现实的。原来，对于在网页上展示数学公式这个问题，早已经有前辈开发了具有对应功能">
+<meta name="keywords" content="Javascript,LaTeX,Node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Hexo中使用LaTeX语法输入数学公式">
+<meta property="og:url" content="http://once4623.site/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/index.html">
+<meta property="og:site_name" content="醉仙阁">
+<meta property="og:description" content="引子作为一款以简洁为宗旨的标记语言，HTML的扩展性并不强，其自身也不具有强大的功能。要使用HTML渲染出漂亮的数学公式可以说并非轻而易举，因此大多数人使用截图上传的方式实现在网页上展示数学公式。但前阵子浏览Wikipedia，便偶然想到一个问题此多的数学公式，如果都使用截图上传的方式来展现，岂不是太费力气了。这显然是不现实的。原来，对于在网页上展示数学公式这个问题，早已经有前辈开发了具有对应功能">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-23T16:58:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在Hexo中使用LaTeX语法输入数学公式">
+<meta name="twitter:description" content="引子作为一款以简洁为宗旨的标记语言，HTML的扩展性并不强，其自身也不具有强大的功能。要使用HTML渲染出漂亮的数学公式可以说并非轻而易举，因此大多数人使用截图上传的方式实现在网页上展示数学公式。但前阵子浏览Wikipedia，便偶然想到一个问题此多的数学公式，如果都使用截图上传的方式来展现，岂不是太费力气了。这显然是不现实的。原来，对于在网页上展示数学公式这个问题，早已经有前辈开发了具有对应功能">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://once4623.site/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/"/>
+
+
+
+
+
+  <title>在Hexo中使用LaTeX语法输入数学公式 | 醉仙阁</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx] + "+1");
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "red",
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function() {
+                $i.remove();
+            });
+        });
+    });
+</script>
+
+<style type="text/css">
+    #img {
+	    position: absolute;
+	    background: url(/threeColumns2/images/window_ks.jpg) no-repeat;
+        width: 250px;
+        height: 125px;
+    }
+    #img a {
+        text-decoration: none;
+        color: green;
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        padding: 95px 5px;
+    }
+    #img .reset {
+        position: absolute;
+        top: -17px;
+        right: 1px;
+        font-size: 12px;
+    }
+    img .floating {
+        width: 250px;
+        height: 125px;
+        left: 0px;
+        top: 0px;
+        filter: grayscale(100%);
+    }
+    @media (max-width: 768px) {
+        #img {
+            display: none !important;
+        }
+    }
+</style>
+<script language="javascript" src="/plugin/floating.js"></script>
+<div  style="position: fixed; z-index: 999999; deploy: none; display: none;">
+  <div id="img">
+      <img class="floating" onclick="window.location.assign('https://www.baidu.com');" src="/images/attachments/floating.jpg">
+    <div class="reset">关闭</div>
+  </div>
+</div>
+<script language="javascript" type="text/javascript">
+    //$("#img").imgFloat();   //不给参数默认（speed:10,xPos:0,yPos:0） 
+    $("#img").imgFloat({
+        speed : 5,
+        xPos : 10,
+        yPos : 10,
+    });
+    $(".reset").click(function() {
+        $("#img").css("display", "none");
+    });
+</script>
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">醉仙阁</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">孤亭一座，美酒一杯；故人一梦，笙歌一曲。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-notes">
+          <a href="/notes/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-notes"></i> <br />
+            
+            札记
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+
+  <div class="site-search">
+    <script type="text/javascript" src="/plugin/search.js"></script>
+    <form class="site-search-form">
+      <div class="local-search-icon"></div>
+      <input type="text" id="local-search-input" class="st-search-input">
+    </form>
+    <div id="local-search-result" class="local-search-result-cls"></div>
+    <script type="text/javascript" id="local.search.active">
+        var inputArea       = document.querySelector("#local-search-input");
+        inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+        inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+    </script>
+  </div>
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">在Hexo中使用LaTeX语法输入数学公式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-03T14:02:04+08:00">
+                2017-10-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Computer-Skill/" itemprop="url" rel="index">
+                    <span itemprop="name">Computer Skill</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/" class="leancloud_visitors" data-flag-title="在Hexo中使用LaTeX语法输入数学公式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>作为一款以简洁为宗旨的标记语言，HTML的扩展性并不强，其自身也不具有强大的功能。要使用HTML渲染出漂亮的数学公式可以说并非轻而易举，因此大多数人使用截图上传的方式实现在网页上展示数学公式。<br>但前阵子浏览<a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a>，便偶然想到一个问题此多的数学公式，如果都使用截图上传的方式来展现，岂不是太费力气了。这显然是不现实的。<br>原来，对于在网页上展示数学公式这个问题，早已经有前辈开发了具有对应功能的插件来解决了，这便是MathJax。<a id="more"></a></p>
+<p>MathJax是一款用以支持在网页中插入数学公式的开源JavaScript插件。支持LaTeX、MathML等多种语言。它负责将网页上指定标签内用这些标记语言的语法输入的数学公式渲染成HTML和CSS代码，使这些漂亮的数学公式不需要复杂的代码便可以在网页中被渲染出来。<br>在此之前，我在书写博文时也采用传统的截图上传的方式来展示数学公式，这样的方式带来的几个问题便是操作量大、整齐性不佳、加载速度慢。因此在前不久重新开始打理博客时，便产生了使用MathJax的想法。于是着手进行了一番尝试。</p>
+<h1 id="在Hexo中启用MathJax"><a href="#在Hexo中启用MathJax" class="headerlink" title="在Hexo中启用MathJax"></a>在Hexo中启用MathJax</h1><p>Hexo原生兼容MathJax，且大多数主流主题如本博客所采用的<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">Next</a>都内置了MathJax，此处即以其为例，在Next中启用MathJax只需要一步。在<code>主题目录</code>下找到<code>_config.yml</code>。用文本编辑器找到如下部分：<br><figure class="highlight plain"><figcaption><span>plain _config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># MathJax Support</span><br><span class="line">mathjax:</span><br><span class="line">  enable: false</span><br><span class="line">  per_page: true</span><br><span class="line">  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML</span><br></pre></td></tr></table></figure><br>将第二行修改为<code>enable: true</code>即可。</p>
+<p>如此以来就在Next主题中启用了MathJax支持，但事实上还存在着不少问题：</p>
+<ul>
+<li>部分数学公式直接显示为代码的形式</li>
+<li>部分数学公式的下标、角标等显示异常</li>
+<li>希腊字母字体显示异常</li>
+</ul>
+<h1 id="更换渲染引擎"><a href="#更换渲染引擎" class="headerlink" title="更换渲染引擎"></a>更换渲染引擎</h1><p>Hexo默认使用<code>hexo-renderer-marked</code>引擎进行网页渲染，其中对许多字符诸如划线、下划线、中括号等定义了转义。因此，在进行网页渲染时，数学公式中的这些字符先通过<code>hexo-renderer-marked</code>进行转义，就发生了歧义，而再通过MathJax渲染出来的数学公式，自然就显示不正常了。<br>在知道了原因以后，问题也就迎刃而解了，解决方法就是更换Hexo默认的<code>hexo-renderer-marked</code>渲染引擎。<code>hexo-renderer-kramed</code>就是一个不错的选择，它在<code>hexo-renderer-marked</code>的基础上修复了一些Bug，其中就包括取消大部分多余的转义。<br>安装<code>hexo-renderer-kramed</code>非常简单，只需在Hexo根目录下执行以下命令：<br><figure class="highlight plain"><figcaption><span>git</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-kramed --save</span><br></pre></td></tr></table></figure><br>这样就完成了<code>hexo-renderer-kramed</code>的安装，但还有一个容易被忽略的问题是，安装<code>hexo-renderer-kramed</code>的同时并不会自动对<code>hexo-renderer-marked</code>进行停用，数学公式仍要经过<code>hexo-renderer-marked</code>的转义，这样显然没有完全解决问题，故我们还需手动对<code>hexo-renderer-marked</code>进行停用。<br>在Hexo的<code>根目录</code>下找到<code>package.json</code>文件，用文本编辑器打开它，删除字符串<code>hexo-renderer-marked</code>所在的一行并保存。之所以不直接卸载<code>hexo-renderer-marked</code>，是因为其他重要包极有可能在卸载该包的同时被删除。</p>
+<h1 id="修复行内公式的转义字符"><a href="#修复行内公式的转义字符" class="headerlink" title="修复行内公式的转义字符"></a>修复行内公式的转义字符</h1><p>在做完工作上面的工作后，行间公式就可以被正确渲染了，但行内公式却还存在着部分问题，这是因为对行间定义的转义字符和对行内定义的转义字符并不相同，还有部分已定义的行间转义字符会与数学公式中可能用到的字符发生冲突，用到这些字符的数学公式在渲染前仍被进行了转义。<br>修复这一问题的方法是，在根目录下依次打开<code>node_modules\kramed\lib\rules</code>，并找到<code>inline.js</code>文件。<br>用文本编辑器编辑文件的第11行和第20行：<br><figure class="highlight plain"><figcaption><span>js inline.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">line 11,</span><br><span class="line">//  escape: /^\\([\\`*&#123;&#125;\[\]()#$+\-.!_&gt;])/,</span><br><span class="line">-&gt;  escape: /^\\([`*\[\]()#$+\-.!_&gt;])/</span><br><span class="line"></span><br><span class="line">line 20,</span><br><span class="line">//  em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,</span><br><span class="line">-&gt;  em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span><br></pre></td></tr></table></figure><br>保存文件。如此一来，所有对数学公式中字符的不合理转义就都被取消了，数学公式的渲染和显示也就正常了。</p>
+<h1 id="确保所有公式都被渲染"><a href="#确保所有公式都被渲染" class="headerlink" title="确保所有公式都被渲染"></a>确保所有公式都被渲染</h1><p>在条件支持的情况下，MathJax会对页面上的所有位置的标签内都进行渲染；但在条件不允许时，MathJax对数学公式的渲染可能止于页面上的某个位置，其后的数学公式都将不被渲染而直接显示为代码的形式。<br>这时，就需要在文章的开头font-matter中手动打开MathJax的开关，如下图：<br><figure class="highlight plain"><figcaption><span>plain _config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: index.html</span><br><span class="line">date: 2016-12-28 21:01:30</span><br><span class="line">tags:</span><br><span class="line">mathjax: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure><br>如上，在使用了数学公式的页面上增加一行<code>mathjax: true</code>，这样就能确保页面上所有数学公式都被正确渲染了。</p>
+<hr>
+<p>参考资料：</p>
+<ul>
+<li><a href="http://theme-next.iissnan.com/third-party-services.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/third-party-services.html</a></li>
+<li><a href="https://www.mathjax.org/" target="_blank" rel="noopener">https://www.mathjax.org/</a></li>
+<li><a href="http://www.jianshu.com/p/7ab21c7f0674" target="_blank" rel="noopener">http://www.jianshu.com/p/7ab21c7f0674</a></li>
+<li><a href="http://www.jianshu.com/p/6c1196f12302" target="_blank" rel="noopener">http://www.jianshu.com/p/6c1196f12302</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+        <div>
+          <hr>
+          <p>
+            本站所有文章均为原创，如果您觉得我的文章质量很好，阅读后对您解决问题提供了较大的帮助，可以点击下面的“分享”按钮把这篇文章分享出去让更多人看到，让更多人看到；亦不妨小额资助我一下，您的鼓励将是我创作文章的不竭动力。
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/images/rewards/wechatpay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/wechatpay.jpg" width="200" height="200">
+                  </a>
+                </td>
+                <td>
+                  <a href="/images/rewards/alipay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/alipay.jpg" width="200" height="200">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      
+      
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
+          
+            <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+          
+            <a href="/tags/Node-js/" rel="tag"># Node.js</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/28/2017-09-28--The-Difference-Between-Zuo/" rel="next" title="中文语法词义混淆现象(一)：浅谈“作”和“做”的区别">
+                <i class="fa fa-chevron-left"></i> 中文语法词义混淆现象(一)：浅谈“作”和“做”的区别
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/" rel="prev" title="位移、速度、加速度与急动度">
+                位移、速度、加速度与急动度 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <hr>
+  <h1>撰写评论</h1>
+  <p>
+    我诚心希望您在阅读后把阅读感受撰写成评论，您的评论将是我创作的宝贵意见与重要参考。如果您有私密建议或私密话题亦可撰写成邮件发送到<a href="mailto:OnceBeta@hotmail.com">我的邮箱</a>。
+  </p>
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="OnceBeta" />
+            
+              <p class="site-author-name" itemprop="name">OnceBeta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/oncebeta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="oncebeta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/lin.rh.50" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/2918949607/home" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引子"><span class="nav-number">1.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在Hexo中启用MathJax"><span class="nav-number">2.</span> <span class="nav-text">在Hexo中启用MathJax</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更换渲染引擎"><span class="nav-number">3.</span> <span class="nav-text">更换渲染引擎</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修复行内公式的转义字符"><span class="nav-number">4.</span> <span class="nav-text">修复行内公式的转义字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#确保所有公式都被渲染"><span class="nav-number">5.</span> <span class="nav-text">确保所有公式都被渲染</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OnceBeta</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+    Hosted by 
+    <a href="https://pages.github.com">GitHub</a>
+    <span class="post-meta-divider">|</span>
+  </div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme by &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4
+  </div>
+
+
+<span>
+  <span class="post-meta-divider">|</span>
+  您是本站第
+  <span id="busuanzi_value_site_pv"></span>
+  位访客
+</span>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hjoVWc2cl5qScUEVyqiO14Ps-gzGzoHsz',
+        appKey: 'cm0snbwdBDPpqj4RRn4hFMs5',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("63cdLIdJfUz6cngclV4kxtpH-gzGzoHsz", "FkQxFe7o9JHcqWcn4fmtkdQr");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>

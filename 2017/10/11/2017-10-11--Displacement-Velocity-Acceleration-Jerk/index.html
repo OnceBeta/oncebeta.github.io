@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="醉仙阁杂谈," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="引子今日上物理课，先生讲到加速度，不禁又想起三年前曾许久纠结在导数的定义上的自己，又想起当时那篇只写了开头却迟迟写不出后笔的博文，是时候完成它了，附上自己的一些新的见解和认知。 时间(Time)与时刻时间是任一物理过程的纵向尺度，用以衡量事件发生的先后顺序。目前主流的时间的定义是爱因斯坦的相对论中所提出的，时间(时间尺度)与空间(距离尺度)构成四维时空这一宇宙的基本结构。在此基础上，我们定义铯原子">
+<meta name="keywords" content="醉仙阁杂谈">
+<meta property="og:type" content="article">
+<meta property="og:title" content="位移、速度、加速度与急动度">
+<meta property="og:url" content="http://once4623.site/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/index.html">
+<meta property="og:site_name" content="醉仙阁">
+<meta property="og:description" content="引子今日上物理课，先生讲到加速度，不禁又想起三年前曾许久纠结在导数的定义上的自己，又想起当时那篇只写了开头却迟迟写不出后笔的博文，是时候完成它了，附上自己的一些新的见解和认知。 时间(Time)与时刻时间是任一物理过程的纵向尺度，用以衡量事件发生的先后顺序。目前主流的时间的定义是爱因斯坦的相对论中所提出的，时间(时间尺度)与空间(距离尺度)构成四维时空这一宇宙的基本结构。在此基础上，我们定义铯原子">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-11T11:36:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="位移、速度、加速度与急动度">
+<meta name="twitter:description" content="引子今日上物理课，先生讲到加速度，不禁又想起三年前曾许久纠结在导数的定义上的自己，又想起当时那篇只写了开头却迟迟写不出后笔的博文，是时候完成它了，附上自己的一些新的见解和认知。 时间(Time)与时刻时间是任一物理过程的纵向尺度，用以衡量事件发生的先后顺序。目前主流的时间的定义是爱因斯坦的相对论中所提出的，时间(时间尺度)与空间(距离尺度)构成四维时空这一宇宙的基本结构。在此基础上，我们定义铯原子">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://once4623.site/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/"/>
+
+
+
+
+
+  <title>位移、速度、加速度与急动度 | 醉仙阁</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx] + "+1");
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "red",
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function() {
+                $i.remove();
+            });
+        });
+    });
+</script>
+
+<style type="text/css">
+    #img {
+	    position: absolute;
+	    background: url(/threeColumns2/images/window_ks.jpg) no-repeat;
+        width: 250px;
+        height: 125px;
+    }
+    #img a {
+        text-decoration: none;
+        color: green;
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        padding: 95px 5px;
+    }
+    #img .reset {
+        position: absolute;
+        top: -17px;
+        right: 1px;
+        font-size: 12px;
+    }
+    img .floating {
+        width: 250px;
+        height: 125px;
+        left: 0px;
+        top: 0px;
+        filter: grayscale(100%);
+    }
+    @media (max-width: 768px) {
+        #img {
+            display: none !important;
+        }
+    }
+</style>
+<script language="javascript" src="/plugin/floating.js"></script>
+<div  style="position: fixed; z-index: 999999; deploy: none; display: none;">
+  <div id="img">
+      <img class="floating" onclick="window.location.assign('https://www.baidu.com');" src="/images/attachments/floating.jpg">
+    <div class="reset">关闭</div>
+  </div>
+</div>
+<script language="javascript" type="text/javascript">
+    //$("#img").imgFloat();   //不给参数默认（speed:10,xPos:0,yPos:0） 
+    $("#img").imgFloat({
+        speed : 5,
+        xPos : 10,
+        yPos : 10,
+    });
+    $(".reset").click(function() {
+        $("#img").css("display", "none");
+    });
+</script>
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">醉仙阁</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">孤亭一座，美酒一杯；故人一梦，笙歌一曲。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-notes">
+          <a href="/notes/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-notes"></i> <br />
+            
+            札记
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+
+  <div class="site-search">
+    <script type="text/javascript" src="/plugin/search.js"></script>
+    <form class="site-search-form">
+      <div class="local-search-icon"></div>
+      <input type="text" id="local-search-input" class="st-search-input">
+    </form>
+    <div id="local-search-result" class="local-search-result-cls"></div>
+    <script type="text/javascript" id="local.search.active">
+        var inputArea       = document.querySelector("#local-search-input");
+        inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+        inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+    </script>
+  </div>
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">位移、速度、加速度与急动度</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-11T22:35:26+08:00">
+                2017-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Physics/" itemprop="url" rel="index">
+                    <span itemprop="name">Physics</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/" class="leancloud_visitors" data-flag-title="位移、速度、加速度与急动度">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>今日上物理课，先生讲到加速度，不禁又想起三年前曾许久纠结在导数的定义上的自己，又想起当时那篇只写了开头却迟迟写不出后笔的博文，是时候完成它了，附上自己的一些新的见解和认知。</p>
+<h1 id="时间-Time-与时刻"><a href="#时间-Time-与时刻" class="headerlink" title="时间(Time)与时刻"></a>时间(Time)与时刻</h1><p><strong>时间</strong>是任一物理过程的纵向尺度，用以衡量事件发生的先后顺序。目前主流的时间的定义是爱因斯坦的相对论中所提出的，时间(时间尺度)与空间(距离尺度)构成四维时空这一宇宙的基本结构。<br>在此基础上，我们定义铯原子的一次固有微波震荡的时间尺度为$1/9192631770s$，即在$1s$内，铯原子将发生9192631770次固有微波震荡。<br><strong>时刻</strong>是一段连续的时间上的一点，每个时刻都对应一个事件或多个事件的发生，亦对应着物理系统的某一状态。<a id="more"></a></p>
+<h1 id="位移-Displacement-与路程-Distance"><a href="#位移-Displacement-与路程-Distance" class="headerlink" title="位移(Displacement)与路程(Distance)"></a>位移(Displacement)与路程(Distance)</h1><p><strong>位移</strong>可以说是古典物理学与矢量分析结合的第一个产物。古典物理学中与之相似的物理量是路程，但随着数学的发展，物理学不得不意识到矢量运算在某些时候方便于数值运算。<br>经典物理学中，位移被定义为质点位置的改变，即：</p>
+<script type="math/tex; mode=display">\Delta {\boldsymbol{r}} = {\boldsymbol{r}_2} - {\boldsymbol{r}_1}</script><p>表示一个从质点从${r_1}$向点${r_2}$的移动过程。<br><strong>位矢(Position)</strong>是在位移的基础上衍生出的一个物理量。它是随着参照系而引入的概念，用以表示质点在某一参照系中的相对位置。在经典物理学中，位矢被定义为参考系原点指向质点位置的一个矢量${\boldsymbol{\vec r}}$。这样一来，相对于参考系某点，质点的位置就可以用位矢来表示，位移的定义也将等价于“位矢的变化”。</p>
+<p><strong>路程</strong>则是位移在古典物理学中对应的定义，它表示质点移动轨迹的长度，其之于位移不同的是，位移具有方向性，且位移的大小为质点在物理过程始末位置的直线距离。</p>
+<h1 id="速度-Velocity-与速率-Rate"><a href="#速度-Velocity-与速率-Rate" class="headerlink" title="速度(Velocity)与速率(Rate)"></a>速度(Velocity)与速率(Rate)</h1><p>经典力学中，<strong>速度</strong>的物理意义为“物体(质点)运动的快慢”，平均速度被定义为位移与时间之比，即：</p>
+<script type="math/tex; mode=display">{\boldsymbol{\bar v}} = \frac{\Delta {\boldsymbol{r}}}{\Delta t}</script><p>与平均速度相似地，我们还定义了瞬时速度，表示位置矢量对时间的变化率：</p>
+<script type="math/tex; mode=display">{\boldsymbol{v}} = \frac{d{\boldsymbol{r}}}{dt}</script><p>与路程相似地，我们定义<strong>速率</strong>作为速度的标量，它被定义为路程与时间之比，同样也有瞬时速率和平均速率两种定义：</p>
+<script type="math/tex; mode=display">\bar v = \frac{\Delta s}{\Delta t},v = \frac{ds}{dt}</script><p>值得注意的有，瞬时速度在数值上等于瞬时速率，而平均速度则不然，只有当质点作直线运动时，它们才相等，否则平均速度将小于平均速率，即：</p>
+<script type="math/tex; mode=display">|{\boldsymbol{v}}| = v,|{\boldsymbol{\bar v}}| \leqslant \bar v</script><p>相对论力学支持光速不变原理(principle of Constancy of Light Velocity)，即运动以光速(Light Velocity)$c = {\text{2}}{\text{.99792458}} \cdot {10^8}m/s$为速度极限，任何惯性系中的相对速度或绝对速度都不能超过这一数值。</p>
+<h2 id="加速度-Acceleration-与急动度-Jerk"><a href="#加速度-Acceleration-与急动度-Jerk" class="headerlink" title="加速度(Acceleration)与急动度(Jerk)"></a>加速度(Acceleration)与急动度(Jerk)</h2><p><strong>加速度</strong>是经典物理学最重要的成果之一。它被定义为“速度变化的速度”，与速度相似的，它也有平均价速度和瞬时加速度两种定义，即：</p>
+<script type="math/tex; mode=display">{\boldsymbol{\bar a}} = \frac{\boldsymbol{v}(t + \Delta t) - {\boldsymbol{v}}(t)}{\Delta t},{\boldsymbol{a}} = \frac{d{\boldsymbol{v}}}{dt}</script><p>其中${\boldsymbol{v}}$总表示瞬时速度。</p>
+<p><strong>急动度</strong>是在近年来才初次被提及的一个物理量，它的主要研究价值体现在生物学而非物理学。它被定义为加速度对时间的变化率，即：</p>
+<script type="math/tex; mode=display">{\boldsymbol{\bar j}} = \frac{\boldsymbol{a}(t + \Delta t) - {\boldsymbol{a}}(t)}{\Delta t}</script><p>与速度、加速度相似地，上述定义为“平均急动度”，事实上也可以有：${\boldsymbol{j}} = \frac{d{\boldsymbol{a}}}{dt}$</p>
+<h2 id="四者间的联系"><a href="#四者间的联系" class="headerlink" title="四者间的联系"></a>四者间的联系</h2><p>上面在定义这几个物理量时，同时强调了“平均”和“瞬时”，旨在为了分析四者的微分关系，事实上如果把它们都看作时间的函数，它们的微分形式是统一的：</p>
+<script type="math/tex; mode=display">\left\{ \begin{gathered} {\boldsymbol{v}}(t) = \frac{d{\boldsymbol{r}}}{dt} = \mathop {\lim }\limits_{\Delta t \to 0} \frac{\boldsymbol{r}(t + \Delta t) - {\boldsymbol{r}}(t)}{\Delta t} = {\boldsymbol{r}}'(t) \hfill \\ {\boldsymbol{a}}(t) = \frac{d{\boldsymbol{v}}}{dt} = \mathop {\lim }\limits_{\Delta t \to 0} \frac{\boldsymbol{v}(t + \Delta t) - {\boldsymbol{v}}(t)}{\Delta t} = \mathop {\lim }\limits_{\Delta t \to 0} \frac{\boldsymbol{r}'(t + \Delta t) - {\boldsymbol{r}}'(t)}{\Delta t} = {\boldsymbol{r}}''(t) \hfill \\ {\boldsymbol{j}}(t) = \frac{d{\boldsymbol{a}}}{dt} = \mathop {\lim }\limits_{\Delta t \to 0} \frac{\boldsymbol{a}(t + \Delta t) - {\boldsymbol{a}}(t)}{\Delta t} = \mathop {\lim }\limits_{\Delta t \to 0} \frac{\boldsymbol{r}''(t + \Delta t) - {\boldsymbol{r}}''(t)}{\Delta t} = {\boldsymbol{r}}'''(t) \hfill \end{gathered} \right.\</script><p>这样我们分别对速度、加速度、急动度进行一次、两次、三次积分，就可以求出含急动度的直线运动的路程：</p>
+<script type="math/tex; mode=display">{\boldsymbol{r}}(t) = {\boldsymbol{v}}(0)t + \frac{1}{2}{\boldsymbol{a}}(0){t^2} + \frac{1}{6}{\boldsymbol{j}}{t^3}</script><p>上式在经典物理学中是重要的，一般地，在一个过程中等于$0$的一个项或多个项可以省略。</p>
+<h1 id="实例研究：探究速度、加速度和急动度对汽车行驶过程中乘车感受的影响"><a href="#实例研究：探究速度、加速度和急动度对汽车行驶过程中乘车感受的影响" class="headerlink" title="实例研究：探究速度、加速度和急动度对汽车行驶过程中乘车感受的影响"></a>实例研究：探究速度、加速度和急动度对汽车行驶过程中乘车感受的影响</h1><p>对于热爱驾驶的人们来说，<strong>推背感(Feeling of Jumping Forward)</strong>和<strong>舒适度(Degree of Comfort)</strong>是车辆的两项重要指标，前者直观反映为车辆在加速时乘车者感觉到的向后的力的作用已经座椅对乘车者背部的支撑感，后者直观反映为在车辆或急或缓的变速过程中乘车者的舒适程度。<br>要研究这两项指标显然有必要先研究“乘车者何时会感受到力的作用”，显然在车辆作匀速直线运动时，乘车者只能通过观察车窗外的事物察觉到自己不是静止的并粗略判断自己的速度大小，但无法感觉到。<br>在车辆刹车时，若刹车片处于同一位置，则可认为车辆作$a &lt; 0$的匀减速直线运动，此时乘车者会感受到一种前倾的力的作用；仔细分析还将发现，越靠近座椅和车辆地面的部位，这种感觉越微弱，越远离的部位，这种感觉越强烈，究其原因，可以认为车辆的减速源于刹车片的摩擦力，乘车者的减速则源于座椅和车辆地面对人的摩擦力，这个力在人体内要经过一系列相当复杂的分子间作用传递到人的全身，如此一来靠近座椅和车辆地面的部位很快达到了和车辆同步的速度，而远离的部位则需要片刻后才能达到，这样便产生了不同部位的位异，这种位异正是导致乘车者产生前倾感的原因，我们认为是这个阻力在传递过程中变得不均匀。因此这种前倾感与车辆性能是无关的，性能再好的车辆也无法改变阻力在乘车者身体部位的传递速度，而决定这种前倾感强弱的因素只有刹车的急缓，在车辆急刹车时乘车者必将剧烈前倾甚至发生碰撞。<br>我们提到的另一个参数是推背感，经验告诉我们，这一感觉产生于车辆的加速过程中。车辆的加速过程主要分为两段，第一段是驾驶员踩油门逐渐加深的过程，这一过程中<strong>单位时间喷油量(Velocity of Injection Quantity)</strong>所对应的牵引力逐渐增大；第二段是油门平稳后仍持续一段时间的加速过程，这一过程中牵引力不变，但由于仍然有$F &gt; f$，所以车辆继续加速直到$F = f$达到速度最大的匀速直线运动状态。事实上与前倾感类似的，乘车者产生推背感的一部分原因也是由于不同部位的位异，这种感觉本应该是与前倾感相对的“后倾感”，但由于座椅的存在，乘车者在后倾时就被座椅挡住了。<br>但仔细分析，位异并不能够完全作为解释推背感产生的原因，因为对于位异而言，加速度越大位异越大，而事实却并非简单如此。缓慢地加深油门和急促地加深油门相比，后者的推背感更为强烈，经过分析不难发现，踩油门的急缓所对应的正是急动度，急动度才是推背感强弱的主要原因。而这一指标就较为考察发动机的性能了。</p>
+<h2 id="扩展阅读：减速玻璃-Safety-Glass"><a href="#扩展阅读：减速玻璃-Safety-Glass" class="headerlink" title="扩展阅读：减速玻璃(Safety Glass)"></a>扩展阅读：减速玻璃(Safety Glass)</h2><p>事实上影响车辆舒适度的并非由在车辆或急或缓的变速过程中乘车者的舒适程度单一决定，而是作为驾驶感受和乘坐感受的整体反映。<br>事实上我们常常提到的减速玻璃也与舒适度相关，甚至关于车辆的安全性能。所谓减速玻璃是指经过特殊打磨抛光处理的挡风玻璃，普通玻璃表面或内部或多或少有一些晶体变形，如果挡风玻璃发生这种情况就会导致距离判断的错误。<br>而减速玻璃与普通玻璃相比最主要的差别正是平整度与光滑度的大大提高，从而有效减少了这种距离判断失误，从一个方面提升了车辆的安全性能，这也就不难理解在英语中减速玻璃事实上称为Safety Glass(安全玻璃)了，或者说安全玻璃的叫法应该是更加合理的。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>事实上在选购车辆时并不应该局限地关注车辆的舒适度与推背感，它们固然是车辆的两项指标，但却不能作为决定车辆价值的全部因素。在环境形势日趋严峻的地球，一款排量低的较为环保的车辆作为代步工具何尝不是更好的选择呢？</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+        <div>
+          <hr>
+          <p>
+            本站所有文章均为原创，如果您觉得我的文章质量很好，阅读后对您解决问题提供了较大的帮助，可以点击下面的“分享”按钮把这篇文章分享出去让更多人看到，让更多人看到；亦不妨小额资助我一下，您的鼓励将是我创作文章的不竭动力。
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/images/rewards/wechatpay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/wechatpay.jpg" width="200" height="200">
+                  </a>
+                </td>
+                <td>
+                  <a href="/images/rewards/alipay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/alipay.jpg" width="200" height="200">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      
+      
+      
+        <div class="post-tags">
+          
+            <a href="/tags/醉仙阁杂谈/" rel="tag"># 醉仙阁杂谈</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/" rel="next" title="在Hexo中使用LaTeX语法输入数学公式">
+                <i class="fa fa-chevron-left"></i> 在Hexo中使用LaTeX语法输入数学公式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/" rel="prev" title="动能与动量">
+                动能与动量 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <hr>
+  <h1>撰写评论</h1>
+  <p>
+    我诚心希望您在阅读后把阅读感受撰写成评论，您的评论将是我创作的宝贵意见与重要参考。如果您有私密建议或私密话题亦可撰写成邮件发送到<a href="mailto:OnceBeta@hotmail.com">我的邮箱</a>。
+  </p>
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="OnceBeta" />
+            
+              <p class="site-author-name" itemprop="name">OnceBeta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/oncebeta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="oncebeta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/lin.rh.50" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/2918949607/home" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引子"><span class="nav-number">1.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#时间-Time-与时刻"><span class="nav-number">2.</span> <span class="nav-text">时间(Time)与时刻</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#位移-Displacement-与路程-Distance"><span class="nav-number">3.</span> <span class="nav-text">位移(Displacement)与路程(Distance)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#速度-Velocity-与速率-Rate"><span class="nav-number">4.</span> <span class="nav-text">速度(Velocity)与速率(Rate)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#加速度-Acceleration-与急动度-Jerk"><span class="nav-number">4.1.</span> <span class="nav-text">加速度(Acceleration)与急动度(Jerk)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四者间的联系"><span class="nav-number">4.2.</span> <span class="nav-text">四者间的联系</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实例研究：探究速度、加速度和急动度对汽车行驶过程中乘车感受的影响"><span class="nav-number">5.</span> <span class="nav-text">实例研究：探究速度、加速度和急动度对汽车行驶过程中乘车感受的影响</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展阅读：减速玻璃-Safety-Glass"><span class="nav-number">5.1.</span> <span class="nav-text">扩展阅读：减速玻璃(Safety Glass)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论"><span class="nav-number">5.2.</span> <span class="nav-text">结论</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OnceBeta</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+    Hosted by 
+    <a href="https://pages.github.com">GitHub</a>
+    <span class="post-meta-divider">|</span>
+  </div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme by &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4
+  </div>
+
+
+<span>
+  <span class="post-meta-divider">|</span>
+  您是本站第
+  <span id="busuanzi_value_site_pv"></span>
+  位访客
+</span>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hjoVWc2cl5qScUEVyqiO14Ps-gzGzoHsz',
+        appKey: 'cm0snbwdBDPpqj4RRn4hFMs5',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("63cdLIdJfUz6cngclV4kxtpH-gzGzoHsz", "FkQxFe7o9JHcqWcn4fmtkdQr");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

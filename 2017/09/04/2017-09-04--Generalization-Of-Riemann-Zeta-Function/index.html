@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Special Functions' Generalization," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="摘要相信每一位数学爱好者对黎曼猜想(Riemann Hypothesis)都不会陌生，这是19世纪德国著名数学家黎曼于1859年在论文中提出的一个著名猜想。该论文讨论了当时解析数论素数分布这一热门话题，黎曼在结尾处猜想道：黎曼$\zeta$函数的所有非平凡零点，都具有$s = \frac{1}{2} + it$的形式；换句话说，所有非平凡零点都在直线$\operatorname{Re} s = \">
+<meta name="keywords" content="Special Functions&#39; Generalization">
+<meta property="og:type" content="article">
+<meta property="og:title" content="黎曼$\zeta$函数简括">
+<meta property="og:url" content="http://once4623.site/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/index.html">
+<meta property="og:site_name" content="醉仙阁">
+<meta property="og:description" content="摘要相信每一位数学爱好者对黎曼猜想(Riemann Hypothesis)都不会陌生，这是19世纪德国著名数学家黎曼于1859年在论文中提出的一个著名猜想。该论文讨论了当时解析数论素数分布这一热门话题，黎曼在结尾处猜想道：黎曼$\zeta$函数的所有非平凡零点，都具有$s = \frac{1}{2} + it$的形式；换句话说，所有非平凡零点都在直线$\operatorname{Re} s = \">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-23T09:22:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="黎曼$\zeta$函数简括">
+<meta name="twitter:description" content="摘要相信每一位数学爱好者对黎曼猜想(Riemann Hypothesis)都不会陌生，这是19世纪德国著名数学家黎曼于1859年在论文中提出的一个著名猜想。该论文讨论了当时解析数论素数分布这一热门话题，黎曼在结尾处猜想道：黎曼$\zeta$函数的所有非平凡零点，都具有$s = \frac{1}{2} + it$的形式；换句话说，所有非平凡零点都在直线$\operatorname{Re} s = \">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://once4623.site/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/"/>
+
+
+
+
+
+  <title>黎曼$\zeta$函数简括 | 醉仙阁</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx] + "+1");
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "red",
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function() {
+                $i.remove();
+            });
+        });
+    });
+</script>
+
+<style type="text/css">
+    #img {
+	    position: absolute;
+	    background: url(/threeColumns2/images/window_ks.jpg) no-repeat;
+        width: 250px;
+        height: 125px;
+    }
+    #img a {
+        text-decoration: none;
+        color: green;
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        padding: 95px 5px;
+    }
+    #img .reset {
+        position: absolute;
+        top: -17px;
+        right: 1px;
+        font-size: 12px;
+    }
+    img .floating {
+        width: 250px;
+        height: 125px;
+        left: 0px;
+        top: 0px;
+        filter: grayscale(100%);
+    }
+    @media (max-width: 768px) {
+        #img {
+            display: none !important;
+        }
+    }
+</style>
+<script language="javascript" src="/plugin/floating.js"></script>
+<div  style="position: fixed; z-index: 999999; deploy: none; display: none;">
+  <div id="img">
+      <img class="floating" onclick="window.location.assign('https://www.baidu.com');" src="/images/attachments/floating.jpg">
+    <div class="reset">关闭</div>
+  </div>
+</div>
+<script language="javascript" type="text/javascript">
+    //$("#img").imgFloat();   //不给参数默认（speed:10,xPos:0,yPos:0） 
+    $("#img").imgFloat({
+        speed : 5,
+        xPos : 10,
+        yPos : 10,
+    });
+    $(".reset").click(function() {
+        $("#img").css("display", "none");
+    });
+</script>
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">醉仙阁</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">孤亭一座，美酒一杯；故人一梦，笙歌一曲。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-notes">
+          <a href="/notes/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-notes"></i> <br />
+            
+            札记
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+
+  <div class="site-search">
+    <script type="text/javascript" src="/plugin/search.js"></script>
+    <form class="site-search-form">
+      <div class="local-search-icon"></div>
+      <input type="text" id="local-search-input" class="st-search-input">
+    </form>
+    <div id="local-search-result" class="local-search-result-cls"></div>
+    <script type="text/javascript" id="local.search.active">
+        var inputArea       = document.querySelector("#local-search-input");
+        inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+        inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+    </script>
+  </div>
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">黎曼$\zeta$函数简括</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-04T12:04:37+08:00">
+                2017-09-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Math/" itemprop="url" rel="index">
+                    <span itemprop="name">Math</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/" class="leancloud_visitors" data-flag-title="黎曼$\zeta$函数简括">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>相信每一位数学爱好者对黎曼猜想(Riemann Hypothesis)都不会陌生，这是19世纪德国著名数学家黎曼于1859年在论文中提出的一个著名猜想。<br>该论文讨论了当时解析数论素数分布这一热门话题，黎曼在结尾处猜想道：<font face="Kaiti">黎曼$\zeta$函数的所有非平凡零点，都具有$s = \frac{1}{2} + it$的形式</font>；换句话说，所有非平凡零点都在直线$\operatorname{Re} s = \frac{1}{2}$上。<br>这一猜想无数次在大小讲义或学术讨论会上被提到，却迄今悬而未决；单就其重要性而言，无论黎曼猜想被证明或被证伪，都将对数学界、物理学界及其他相关领域带来十分震撼的影响。<br>而很容易注意到，黎曼猜想研究的核心就是黎曼$\zeta$函数。这也正是本文将要介绍的。<a id="more"></a></p>
+<h1 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h1><h2 id="调和级数-H-sum-limits-r-1-infty-frac-1-r-1-frac-1-2-frac-1-3-cdots"><a href="#调和级数-H-sum-limits-r-1-infty-frac-1-r-1-frac-1-2-frac-1-3-cdots" class="headerlink" title="调和级数$H = \sum\limits_{r = 1}^\infty  {\frac{1}{r}}  = 1 + \frac{1}{2} + \frac{1}{3} +  \cdots$"></a>调和级数$H = \sum\limits_{r = 1}^\infty  {\frac{1}{r}}  = 1 + \frac{1}{2} + \frac{1}{3} +  \cdots$</h2><p>这一和式几乎可被认为是无穷级数的起源了，早在中世纪就陆续有学者对其进行研究，但当时大多数学者认为这是一个收敛级数。直到1360年，数学家奥雷斯姆(<em>Oresme</em>)证明其发散，他的方法很简单：</p>
+<script type="math/tex; mode=display">H = 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8} +  \cdots \\
+H' = 1 + \frac{1}{2} + (\frac{1}{4} + \frac{1}{4}) + (\frac{1}{8} + \frac{1}{8} + \frac{1}{8} + \frac{1}{8}) +  \cdots</script><p>将两个级数的项相对应，注意后一个级数$H’$，每一个括号内的项都小于前一个级数的对应项，即有$H’ &lt; H$，而$H’$中每一个括号中所有项却都等于$\frac{1}{2}$，故$H’$趋于无穷，所以调和级数$H$也趋于无穷。</p>
+<p>而在此之后，陆续有数学家对调和级数的发散速率也即渐近公式进行研究，但都以失败告终，直到牛顿(<em>Newton</em>)在他的《流数法》中提出了对数函数的泰勒级数展开式：</p>
+<script type="math/tex; mode=display">\ln (1 + x) = \sum\limits_{r = 1}^\infty  {\frac{( - 1)^{r - 1}}{r} {x^{r}}} ,\forall x \in ( - 1,1]</script><p>欧拉利用这一展开式成功获得了：</p>
+<script type="math/tex; mode=display">{H_n} = \sum\limits_{r = 1}^n {\frac{1}{r}}  \sim \ln n</script><p>并定义了欧拉-马歇罗尼常数：</p>
+<script type="math/tex; mode=display">\gamma  = \mathop {\lim }\limits_{n \to \infty } (\sum\limits_{r = 1}^n {\frac{1}{r}}  - \ln n) \approx 0.5772</script><p>这一结果至今被作为调和级数的渐近公式，其精度${H_r} - \ln r = O(\frac{1}{2r})$。</p>
+<h2 id="巴塞尔问题"><a href="#巴塞尔问题" class="headerlink" title="巴塞尔问题"></a>巴塞尔问题</h2><p>所谓巴塞尔问题，是指所有平方数的倒数和，这一问题的第一个证明是由欧拉(<em>Euler</em>)给出的，他证明了：</p>
+<script type="math/tex; mode=display">\zeta (2) = \frac{\pi ^2}{6}</script><p>这一结果在许多数学或物理问题上有重要的用途，这其中最简单的例子就是，从正整数中任取两数，它们互素的概率就是$\frac{6}{\pi ^2}$。<br>欧拉先后两次“证明”了这一结果。他的第一个证明基于一个用错误方法得到的无穷乘积展开式，但这一无穷乘积展开式却被100多年后的魏尔斯特拉斯(<em>Weierstrass</em>)分解定理证明为正确的。<br>事后欧拉本人似乎也意识到了他的第一个证明并不严谨，在数年之后，于是在数年后又给出了第二个严谨的证明，但由于他的第一个证明已被传颂得广为人知，第二个证明反而变得鲜为人知了。</p>
+<p>欧拉的第一个“证明”仅通过将多项式分解与泰勒级数展开式联系到一起的方式导出：</p>
+<script type="math/tex; mode=display">\begin{align*} &\sin x = \sum\limits_{r = 0}^\infty  {\frac{( - 1)^r}{(2r + 1)!}{x^{2r + 1}}}  = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} +  \cdots \\ &\Rightarrow \frac{\sin x}{x} = \sum\limits_{r = 0}^\infty  {\frac{( - 1)^r}{(2r + 1)!}{x^{2r}}}  = 1 - \frac{x^2}{3!} + \frac{x^4}{5!} - \frac{x^6}{7!} +  \cdots \end{align*}</script><p>再令$\frac{\sin x}{x} = 0$解得此方程的根为$x = k\pi ,k \in \mathbb{Z}\backslash { 0}$，亦即$\frac{\sin x}{x} = \sum\limits_{r = 0}^\infty  {\frac{( - 1)^r}{(2r + 1)!}{x^{2r}}}  = 1 - \frac{x^2}{3!} + \frac{x^4}{5!} - \frac{x^6}{7!} +  \cdots$的根(<font face="Kaiti">注：尽管这一结果并不严谨。</font>)<br>所以该方程必可分解为下述形式：</p>
+<script type="math/tex; mode=display">(x - \pi )(x + \pi )(x - 2\pi )(x + 2\pi )(x - 3\pi )(x + 3\pi ) \cdots  = 0</script><p>相邻两项应用平方差公式：</p>
+<script type="math/tex; mode=display">({x^2} - {\pi ^2})(x - 4{\pi ^2})(x - 9{\pi ^2}) \cdots  = 0</script><p>如此便可得：</p>
+<script type="math/tex; mode=display">\frac{\sin x}{x} = \prod\limits_{r = 1}^\infty  {(1 - \frac{x^2}{r^2\pi ^2})}  = (1 - \frac{x^2}{\pi ^2})(1 - \frac{x^2}{4{\pi ^2}})(1 - \frac{x^2}{9{\pi ^2}}) \cdots</script><p>比较上式中${x^2}$的系数便有：</p>
+<script type="math/tex; mode=display">- \frac{1}{3!} =  - \frac{1}{6} =  - (\frac{1}{\pi ^2} + \frac{1}{4{\pi ^2}} + \frac{1}{9{\pi ^2}}) =  - \frac{1}{\pi ^2}\sum\limits_{r = 1}^\infty  {\frac{1}{r^2}}  \Rightarrow \zeta (2) = \sum\limits_{r = 1}^\infty  {\frac{1}{r^2}}  = \frac{\pi ^2}{6}</script><p>他的第二个证明是基于第一个证明的，考虑到第一个证明中导出的无穷乘积展开式缺乏严谨性，他便换了一个函数进行考虑。<br>这一次，他将证明的核心放在了双曲正弦函数$\sinh x$上：<br>利用当时早已远传的因式分解：</p>
+<script type="math/tex; mode=display">{z^m} - {a^m} = (z - a)\prod\limits_{r = 1}^{(m - 1)/2} {({z^2} - 2az\cos \frac{2r\pi }{m} + {a^2})}</script><p>分别令$z = {(1 + \frac{x}{N})^m},a = {(1 - \frac{x}{N})^m}$且$m = N$其中$N$为奇数就有：</p>
+<script type="math/tex; mode=display">\begin{align*} {(1 + \frac{x}{N})^N} - {(1 - \frac{x}{N})^N} &= \frac{2x}{N}\prod\limits_{r = 1}^{(N - 1)/2} {[(2 + \frac{2{x^2}}{N^2}) - 2(1 - \frac{x^2}{N^2})\cos \frac{2r\pi }{N}]} \\&= \frac{2x}{N}\prod\limits_{r = 1}^{(N - 1)/2} {[(1 - \cos \frac{2r\pi }{N}) + \frac{x^2}{N^2}(1 + \cos \frac{2r\pi }{N})]} \\&= {C_N}x\prod\limits_{r = 1}^{(N - 1)/2} {[1 + \frac{x^2}{N^2}\frac{1 + \cos (2r\pi /N)}{1 - \cos (2r\pi /N)}]} \end{align*}</script><p>通过比较易知${C_N} = 2$。再令$N \to \infty$，左端无穷乘积内即$1 + \frac{x^2}{r^2\pi ^2}$，即：</p>
+<script type="math/tex; mode=display">\sinh x = \frac{e^x - e^{ - x}}{2} = x\prod\limits_{r = 1}^\infty  {(1 + \frac{x^2}{r^2\pi ^2})}</script><p>而接下来比较系数的处理就和第一个证明中的方法别无二致了。</p>
+<p>正是巴塞尔问题的解决，激起了欧拉对一系列级数乃至$\zeta$函数的研究兴致，事实上他在晚年得出了一个更一般的结论：</p>
+<script type="math/tex; mode=display">\zeta (2n) = \frac{B_{2n}( - 1)^{n + 1}{(2\pi )^{2n}}}{2(2n)!},\forall n \in {\mathbb{Z}^ + }</script><p>但对于奇数$2n + 1$情况就要复杂得多，以至于至今都未有对$\zeta (2n + 1),\forall n \in {\mathbb{Z}^ + },n &gt; 1$无理性的证明。</p>
+<h2 id="素数的无穷乘积展开式"><a href="#素数的无穷乘积展开式" class="headerlink" title="素数的无穷乘积展开式"></a>素数的无穷乘积展开式</h2><p>这是欧拉关于黎曼$\zeta$函数的第二项重要结果，也正是这一结果首次将素数的有关研究同黎曼$\zeta$函数联系起来。<br>这一结果可以写成：$\zeta (s) = \sum\limits_{r = 1}^\infty  {r^{ - s}}  = \prod\limits_p {\frac{1}{1 - {p^{ - s}}}}$，其中符号$\mathop \Pi \limits_p$表示遍历所有素数。<br>事实上，这一看似深奥的结果只源于简单的代数运算，它只不过是欧拉巧妙构造的一个巨大的“筛法”：</p>
+<script type="math/tex; mode=display">\left. \begin{gathered}
+  \zeta (s) = 1 + {2^{ - s}} + {3^{ - s}} + {4^{ - s}} +  \cdots  \hfill \\
+  {2^{ - s}}\zeta (s) = {2^{ - s}} + {4^{ - s}} + {6^{ - s}} + {8^{ - s}} +  \cdots  \hfill \\ 
+\end{gathered}  \right\} \Rightarrow (1 - {2^{ - s}})\zeta (s) = 1 + {3^{ - s}} + {5^{ - s}} + {7^{ - s}} + {9^{ - s}} +  \cdots</script><p>这一过程将所有素数$2$的倍数从$\zeta (s)$中筛去，对素数$3$重复这一过程：</p>
+<script type="math/tex; mode=display">\left. \begin{gathered}
+  (1 - {2^{ - s}})\zeta (s) = 1 + {3^{ - s}} + {5^{ - s}} + {7^{ - s}} + {9^{ - s}} +  \cdots  \hfill \\
+  {3^{ - s}}(1 - {2^{ - s}})\zeta (s) = {3^{ - s}} + {9^{ - s}} + {15^{ - s}} + {21^{ - s}} +  \cdots  \hfill \\ 
+\end{gathered}  \right\} \Rightarrow (1 - {3^{ - s}})(1 - {2^{ - s}})\zeta (s) = 1 + {5^{ - s}} + {7^{ - s}} + {11^{ - s}} + {13^{ - s}} +  \cdots</script><p>将素数$3$的倍数从$\zeta (s)$中筛去，对每一个素数都如此反复，最终式子的右端将只剩下$1$，而左端就是所有每重复一次都会增加一个的$1 - {p^{ - s}}$项：</p>
+<script type="math/tex; mode=display">\cdots (1 - {11^{ - s}})(1 - {7^{ - s}})(1 - {5^{ - s}})(1 - {3^{ - s}})(1 - {2^{ - s}})\zeta (s) = 1 \Rightarrow \zeta (s) = \prod\limits_p {\frac{1}{1 - {p^{ - s}}}}</script><h2 id="黎曼的论文"><a href="#黎曼的论文" class="headerlink" title="黎曼的论文"></a>黎曼的论文</h2><p>事实上欧拉还得到了其他一些零碎的结果，如：</p>
+<script type="math/tex; mode=display">\zeta ( - 1) = \sum\limits_{\mathbb{Z}^ + } n  = 1 + 2 + 3 +  \cdots  =  - \frac{1}{12}</script><script type="math/tex; mode=display">\zeta ( - 2) = \sum\limits_{\mathbb{Z}^ + } {n^2}  = 1 + 4 + 9 +  \cdots  = 0</script><script type="math/tex; mode=display">\zeta ( - 3) = \sum\limits_{\mathbb{Z}^ + } {n^3}  = 1 + 8 + 27 +  \cdots  = \frac{1}{120}</script><p>但由于相对落后的分析基础，欧拉取得的这些结果都是不够全面的，我们并不否认欧拉在这一方面也有着不小的贡献，只是将欧拉所做的一切牢牢奠定在基石之上的人正是黎曼。</p>
+<p>黎曼在这一方面所做的贡献主要有以下几点：</p>
+<ol>
+<li>给出了$\zeta (s) = \sum\limits_{r = 1}^\infty  {r^{ - s}}$的三种积分表示，即在复平面上解析开拓了$\zeta (s)$。</li>
+<li>$\zeta$函数正规化，即以$\zeta$函数为基础定义了满足函数方程$\xi (s) = \xi (1 - s)$的$\xi$函数。</li>
+<li>证明了$\xi (t)$只有在$- \frac{1}{2} &lt; \operatorname{Im} t &lt; \frac{1}{2}$上才可能存在零点并给出了在带状区域$0 &lt; \operatorname{Re} t &lt; T$上零点数目的估计</li>
+</ol>
+<font face="Kaiti">(注：①这里变量记号$t$是黎曼论文原文中使用的记号，这是因为黎曼在论文中的定义与现在通常所见的定义不同，现代数学中的定义是由*朗道(Landau)*给出的：
+$$\xi (s) = \frac{1}{2}s(s - 1){\pi ^{ - \frac{s}{2}}}\Gamma (\frac{s}{2})\zeta (s)$$
+这里的自变量$s$与黎曼定义中的自变量$t$相差一个线性变换$s = \frac{1}{2} + it$，即将$t$以原点为中心逆时针旋转$90^\circ$并向右平移$\frac{1}{2}$个单位可得到$s$，而在朗道定义中，$\xi (t)$则被定义为大写的$\Xi (s)$。
+②类似地还有$\Pi (s)$，这是阶乘最初的解析开拓，即$\Pi (s) = \int\limits_0^{ + \infty } {e^{ - x}{x^s}dx}  = s!$，它与现代数学中的$\Gamma$函数$\Gamma (s) = \int\limits_0^{ + \infty } {e^{ - x}{x^{s - 1}}dx}  = (s - 1)!$间相差一个线性变换$s \leftrightarrow s - 1$。
+为避免符号不统一，下文将统一采用现代数学的通用定义进行表述。)</font>
+
+<h3 id="黎曼-zeta-函数的解析开拓"><a href="#黎曼-zeta-函数的解析开拓" class="headerlink" title="黎曼$\zeta$函数的解析开拓"></a>黎曼$\zeta$函数的解析开拓</h3><p>黎曼对$\zeta$函数的解析开拓基于一个恒等式：</p>
+<script type="math/tex; mode=display">\int\limits_0^{ + \infty } {e^{ - nx}{x^{s - 1}}dx}  = \frac{\Gamma (s)}{n^s}</script><p>再由</p>
+<script type="math/tex; mode=display">\sum\limits_{n = 1}^\infty  {e^{ - nx}}  = \frac{1}{1 - {e^{ - x}}} - 1 = \frac{e^{ - x}}{1 - {e^{ - x}}} = \frac{1}{e^x - 1}</script><p>可得：</p>
+<script type="math/tex; mode=display">\Gamma (s)\zeta (s) = \int\limits_0^{ + \infty } {\frac{x^{s - 1}}{e^x - 1}dx}</script><p>事实上这一积分还可以写成另一形式(其中积分路径从$+ \infty$沿正实轴上测绕到原点，然后再沿正实轴下侧绕到$+ \infty$，路径不包含除原点外被积函数的其他奇点)：</p>
+<script type="math/tex; mode=display">\int\limits_C {\frac{( - z)^{s - 1}}{e^z - 1}dz}  = ({e^{ - i\pi s}} - {e^{i\pi s}})\int\limits_C {\frac{z^{s - 1}}{e^z - 1}dz}</script><h2 id="素数定理的证明"><a href="#素数定理的证明" class="headerlink" title="素数定理的证明"></a>素数定理的证明</h2><h2 id="零点密度"><a href="#零点密度" class="headerlink" title="零点密度"></a>零点密度</h2><h2 id="历史背景"><a href="#历史背景" class="headerlink" title="历史背景"></a>历史背景</h2><p>讲到黎曼猜想，就不得不提及猜想的出处——黎曼的长八页纸的论文了。<br>这是一篇具有划时代意义的论文，19世纪及以前，这一时期的数论主要研究堆叠数论方面的问题，关于素数分布的研究虽一直进行着，但自欧拉(<em>Euler</em>)提出$\sum\limits_{r = 1}^\infty  {r^{ - s}}  = \prod\limits_p {\frac{1}{1 - {p^{ - s}}}}$这一等式后，就一直未有显著的研究成果，1795年，天才数学家高斯(<em>Gauss</em>)提出素数定理的猜想，即：</p>
+<p><font face="Kaiti">当正整数$N$足够大时，有$\pi (N) \approx \int\limits_0^N {\frac{1}{\ln t}dt}$。</font><br>这一猜想在1896年被法国数学家阿达马(Hadamard)和比利时数学家普森(Poussin)先后独立地证明为更强的素数定理$\mathop {\lim }\limits_{x \to \infty } \frac{\pi (x)\ln x}{x} = 1$，该定理可以被认为是解析数论最杰出的成果之一，在后文还将介绍，因为它与黎曼$\zeta$函数边界值定理是等价的：</p>
+<p><font face="Kaiti">黎曼$\zeta$函数$\zeta (s)$在带状区域$[0,1]$的边界$\operatorname{Re} s = 0$和$\operatorname{Re} s = 1$上不存在零点。</font></p>
+<center>[论文英文译文请戳这里](/files/On-the-Number-of-Prime-Numbers-less-than.html)</center>
+
+<h3 id="论文内容介绍"><a href="#论文内容介绍" class="headerlink" title="论文内容介绍"></a>论文内容介绍</h3><p>论文名为《论小于某给定值的素数的个数》，这是一篇长度仅有八页纸、内容却异常丰富的论文。其中包含了许多当时学界学界所不能理解的研究方法，其中黎曼惯用省略手法而著成的多处“显而易见”更是让同一时期他的同行们费尽心思，例如其中一处“显而易见”事实上就使用了47年后才被发现的梅林变换(Mellin Transformation)。<br>而所谓的黎曼猜想，不过是黎曼在论文结尾处简短而诙谐的一段结语：<br>“<font face="Kaiti">事实上我发现在该区间内的实根数目近似等于该数，极有可能所有根都是实数。对此我们自然希望能有一个严格的证明，不过在一些仓促的不成功的初步尝试之后，我暂把寻求证明搁在一边，因为对于我当前研究的直接目的来说他并不是必需的。</font>”<br>这里我们仅对论文内容作初步介绍，在后文中再陆续对相关内容作详细讨论。论文以欧拉发现的$\zeta$函数的素数乘积式为起点，即：</p>
+<script type="math/tex; mode=display">\zeta (s) = \sum\limits_{r = 1}^\infty  {r^{ - s}}  = \prod\limits_p {\frac{1}{1 - {p^{ - s}}}}</script><p>又很自然地联系到了$\Gamma$(笔者认为，这正是黎曼深厚数学功底或是异禀数学天赋的体现)：</p>
+<script type="math/tex; mode=display">\Gamma (s)\zeta (s) = \int\limits_0^{ + \infty } {\frac{( - x)^{s - 1}}{e^x - 1}dx}</script><p>紧接着，为解析开拓$\zeta (s)$到复数域，又考虑了复积分：</p>
+<script type="math/tex; mode=display">\int\limits_C {\frac{( - z)^{s - 1}}{e^{z} - 1}dz}  = ({e^{ - \pi si}} - {e^{\pi si}})\int\limits_0^{ + \infty } {\frac{x^{s - 1}}{e^{x} - 1}dx}</script><p>得到了如下函数方程：</p>
+<script type="math/tex; mode=display">\zeta (s) = {2^{s}}{\pi ^{s - 1}}\zeta (1 - s)\Gamma (1 - s)\sin \frac{\pi s}{2},\forall s:0 < \operatorname{Re} s < 1</script><p>并以此正规化了$\zeta$函数，即所谓的$\xi$函数：</p>
+<script type="math/tex; mode=display">\xi (t) = \Gamma (\frac{s}{2} - 1)(s - 1){\pi ^{ - \frac{s}{2}}}\zeta (s),s = \frac{1}{2} + ti</script><p>它不仅在零点分布上与$\zeta$函数有着极高的相似性，且具有一些$\zeta$函数所不具有的优良性质，如逆元公式：</p>
+<script type="math/tex; mode=display">\xi (s) = \xi (1 - s)</script><p>(<font face="Kaiti">注：爱德蒙·朗道(<em>Edmund Georg Hermann (Yehezkel) Landau</em>)曾给出过$\xi$函数的另一种定义：</font></p>
+<script type="math/tex; mode=display">\xi (s) = \frac{1}{2}s(s - 1){\pi ^{ - \frac{s}{2}}}\Gamma (\frac{s}{2})\zeta (s)\\
+\Xi (s) = \xi (\frac{1}{2} + si)</script><p>在这种定义下，大写$\Xi$函数即黎曼定义下的小写$\xi$函数；小写$\xi$函数则满足另一个公式：</p>
+<script type="math/tex; mode=display">\xi (s) = \xi (1 - s)</script><p>&lt;/FONT&gt;)</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+        <div>
+          <hr>
+          <p>
+            本站所有文章均为原创，如果您觉得我的文章质量很好，阅读后对您解决问题提供了较大的帮助，可以点击下面的“分享”按钮把这篇文章分享出去让更多人看到，让更多人看到；亦不妨小额资助我一下，您的鼓励将是我创作文章的不竭动力。
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/images/rewards/wechatpay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/wechatpay.jpg" width="200" height="200">
+                  </a>
+                </td>
+                <td>
+                  <a href="/images/rewards/alipay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/alipay.jpg" width="200" height="200">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      
+      
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Special-Functions-Generalization/" rel="tag"># Special Functions' Generalization</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/11/2017-08-11--English-Grammar-Voice-And-Tense/" rel="next" title="语态和时态Voice and Tense">
+                <i class="fa fa-chevron-left"></i> 语态和时态Voice and Tense
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/28/2018-03-11--The-Difference-Between-Despiting-And-Discrimination/" rel="prev" title="The Difference between Despising and Discrimination">
+                The Difference between Despising and Discrimination <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <hr>
+  <h1>撰写评论</h1>
+  <p>
+    我诚心希望您在阅读后把阅读感受撰写成评论，您的评论将是我创作的宝贵意见与重要参考。如果您有私密建议或私密话题亦可撰写成邮件发送到<a href="mailto:OnceBeta@hotmail.com">我的邮箱</a>。
+  </p>
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="OnceBeta" />
+            
+              <p class="site-author-name" itemprop="name">OnceBeta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/oncebeta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="oncebeta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/lin.rh.50" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/2918949607/home" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#背景介绍"><span class="nav-number">2.</span> <span class="nav-text">背景介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#调和级数-H-sum-limits-r-1-infty-frac-1-r-1-frac-1-2-frac-1-3-cdots"><span class="nav-number">2.1.</span> <span class="nav-text">调和级数$H = \sum\limits_{r = 1}^\infty  {\frac{1}{r}}  = 1 + \frac{1}{2} + \frac{1}{3} +  \cdots$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#巴塞尔问题"><span class="nav-number">2.2.</span> <span class="nav-text">巴塞尔问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#素数的无穷乘积展开式"><span class="nav-number">2.3.</span> <span class="nav-text">素数的无穷乘积展开式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#黎曼的论文"><span class="nav-number">2.4.</span> <span class="nav-text">黎曼的论文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#黎曼-zeta-函数的解析开拓"><span class="nav-number">2.4.1.</span> <span class="nav-text">黎曼$\zeta$函数的解析开拓</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#素数定理的证明"><span class="nav-number">2.5.</span> <span class="nav-text">素数定理的证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#零点密度"><span class="nav-number">2.6.</span> <span class="nav-text">零点密度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#历史背景"><span class="nav-number">2.7.</span> <span class="nav-text">历史背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#论文内容介绍"><span class="nav-number">2.7.1.</span> <span class="nav-text">论文内容介绍</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OnceBeta</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+    Hosted by 
+    <a href="https://pages.github.com">GitHub</a>
+    <span class="post-meta-divider">|</span>
+  </div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme by &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4
+  </div>
+
+
+<span>
+  <span class="post-meta-divider">|</span>
+  您是本站第
+  <span id="busuanzi_value_site_pv"></span>
+  位访客
+</span>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hjoVWc2cl5qScUEVyqiO14Ps-gzGzoHsz',
+        appKey: 'cm0snbwdBDPpqj4RRn4hFMs5',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("63cdLIdJfUz6cngclV4kxtpH-gzGzoHsz", "FkQxFe7o9JHcqWcn4fmtkdQr");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

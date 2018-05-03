@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="醉仙阁杂谈," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="引子与友人闲聊时谈起动能与动量，不得不说，在不假思索的情况下，很难明确地阐述出二者的区别。于是赶紧阅了几篇资料、打了几页草稿，才撰出此文，应该能较为正确地回答这一问题了。 力(Force)在经典力学中，力被定义为导致物体速度发生改变的物理量。在经历速度到加速度再到力的艰难探索，牛顿(Newton)最终确定了它的量纲为$LM{T^{ - 2}}$，即： 1N = 1kg \cdot m/{s^2}(">
+<meta name="keywords" content="醉仙阁杂谈">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动能与动量">
+<meta property="og:url" content="http://once4623.site/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/index.html">
+<meta property="og:site_name" content="醉仙阁">
+<meta property="og:description" content="引子与友人闲聊时谈起动能与动量，不得不说，在不假思索的情况下，很难明确地阐述出二者的区别。于是赶紧阅了几篇资料、打了几页草稿，才撰出此文，应该能较为正确地回答这一问题了。 力(Force)在经典力学中，力被定义为导致物体速度发生改变的物理量。在经历速度到加速度再到力的艰难探索，牛顿(Newton)最终确定了它的量纲为$LM{T^{ - 2}}$，即： 1N = 1kg \cdot m/{s^2}(">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-27T14:19:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="动能与动量">
+<meta name="twitter:description" content="引子与友人闲聊时谈起动能与动量，不得不说，在不假思索的情况下，很难明确地阐述出二者的区别。于是赶紧阅了几篇资料、打了几页草稿，才撰出此文，应该能较为正确地回答这一问题了。 力(Force)在经典力学中，力被定义为导致物体速度发生改变的物理量。在经历速度到加速度再到力的艰难探索，牛顿(Newton)最终确定了它的量纲为$LM{T^{ - 2}}$，即： 1N = 1kg \cdot m/{s^2}(">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://once4623.site/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/"/>
+
+
+
+
+
+  <title>动能与动量 | 醉仙阁</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx] + "+1");
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "red",
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function() {
+                $i.remove();
+            });
+        });
+    });
+</script>
+
+<style type="text/css">
+    #img {
+	    position: absolute;
+	    background: url(/threeColumns2/images/window_ks.jpg) no-repeat;
+        width: 250px;
+        height: 125px;
+    }
+    #img a {
+        text-decoration: none;
+        color: green;
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        padding: 95px 5px;
+    }
+    #img .reset {
+        position: absolute;
+        top: -17px;
+        right: 1px;
+        font-size: 12px;
+    }
+    img .floating {
+        width: 250px;
+        height: 125px;
+        left: 0px;
+        top: 0px;
+        filter: grayscale(100%);
+    }
+    @media (max-width: 768px) {
+        #img {
+            display: none !important;
+        }
+    }
+</style>
+<script language="javascript" src="/plugin/floating.js"></script>
+<div  style="position: fixed; z-index: 999999; deploy: none; display: none;">
+  <div id="img">
+      <img class="floating" onclick="window.location.assign('https://www.baidu.com');" src="/images/attachments/floating.jpg">
+    <div class="reset">关闭</div>
+  </div>
+</div>
+<script language="javascript" type="text/javascript">
+    //$("#img").imgFloat();   //不给参数默认（speed:10,xPos:0,yPos:0） 
+    $("#img").imgFloat({
+        speed : 5,
+        xPos : 10,
+        yPos : 10,
+    });
+    $(".reset").click(function() {
+        $("#img").css("display", "none");
+    });
+</script>
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">醉仙阁</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">孤亭一座，美酒一杯；故人一梦，笙歌一曲。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-notes">
+          <a href="/notes/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-notes"></i> <br />
+            
+            札记
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+
+  <div class="site-search">
+    <script type="text/javascript" src="/plugin/search.js"></script>
+    <form class="site-search-form">
+      <div class="local-search-icon"></div>
+      <input type="text" id="local-search-input" class="st-search-input">
+    </form>
+    <div id="local-search-result" class="local-search-result-cls"></div>
+    <script type="text/javascript" id="local.search.active">
+        var inputArea       = document.querySelector("#local-search-input");
+        inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+        inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+    </script>
+  </div>
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">动能与动量</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T13:22:57+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Physics/" itemprop="url" rel="index">
+                    <span itemprop="name">Physics</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/" class="leancloud_visitors" data-flag-title="动能与动量">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>与友人闲聊时谈起动能与动量，不得不说，在不假思索的情况下，很难明确地阐述出二者的区别。于是赶紧阅了几篇资料、打了几页草稿，才撰出此文，应该能较为正确地回答这一问题了。</p>
+<h1 id="力-Force"><a href="#力-Force" class="headerlink" title="力(Force)"></a>力(Force)</h1><p>在经典力学中，力被定义为导致物体速度发生改变的物理量。在经历速度到加速度再到力的艰难探索，牛顿(<em>Newton</em>)最终确定了它的量纲为$LM{T^{ - 2}}$，即：</p>
+<script type="math/tex; mode=display">1N = 1kg \cdot m/{s^2}</script><p>(<font face="Kaiti">注：单位的符号$N$用来纪念经典力学的奠基人牛顿。</font>)<br>并通过大量实验发现并论证了牛顿第二定律(Newton’s Second Law)：<br><em><font face="Kaiti">物体在受力的情况下运动状态会发生改变，产生一个与其质量成反比、与其所受合力成正比的加速度。</font></em></p>
+<script type="math/tex; mode=display">{\boldsymbol{F}} = m{\boldsymbol{a}}</script><a id="more"></a>
+<h1 id="惯性-Inertia"><a href="#惯性-Inertia" class="headerlink" title="惯性(Inertia)"></a>惯性(Inertia)</h1><p>牛顿在提出他的第二定律的同时还提出了他的第一定律(Newton’s First Law)：<br><em><font face="Kaiti">若物体没有受力或所受合力为零，那么物体将保持原有的运动状态不改变，运动中保持匀速直线运动状态，静止则保持静止状态。</font></em><br>这一定律是分析机械运动的基础。在此牛顿又定义了一个物理量，用来表示“改变物体运动状态的难易程度”，这就是惯性。由牛顿第二定律可知，物体运动状态的改变，就是速度的大小或方向的改变，就是要使其有加速度；而物体运动状态的改变的大小，就是加速度的大小。<br>若对质量不同的两个物体给予一个相同的力，那么由牛顿第二定律，质量较大的物体获得的加速度将小于质量较小的物体，质量较大的物体“运动状态的改变”将小于质量较小的物体；而若要使质量较大的物体获得与质量较小的物体相同的加速度，则需要给予其一个较大的力。<br>经过以上分析，似乎可以断言，质量较大的物体运动状态较难改变，质量较小的物体运动状态则相对容易改变。没错，惯性就被等价地定义为物体的质量了。</p>
+<h1 id="守恒量-Conserved-Quantity"><a href="#守恒量-Conserved-Quantity" class="headerlink" title="守恒量(Conserved Quantity)"></a>守恒量(Conserved Quantity)</h1><h2 id="任意-Arbitrariness-与完全守恒-Constant"><a href="#任意-Arbitrariness-与完全守恒-Constant" class="headerlink" title="任意(Arbitrariness)与完全守恒(Constant)"></a>任意(Arbitrariness)与完全守恒(Constant)</h2><p>守恒量是指在某个满足特定条件的物理过程中保持不变时，即使其他物理量变化，实验结果中仍能使得某个物理量保持不变的物理量。研究守恒量对研究物理规律的统一性有重要意义。<br>接下来我们要来研究机械运动中的守恒量。<br>首先就要研究力的守恒性，考虑这样一个机械运动过程，我们暂且称之为“质点-恒力-直线运动过程”，在这一过程所观察的封闭系统由一个初速度为${\boldsymbol{v}_0}$的质点构成，过程中质点受到一个同向恒力的作用。显然，在受力期间质点将获得一个大小为$\frac{F}{m}$的加速度，我们要观察的实验结果正是力的作用效果——质点速度的变化量，但速度的变化量是过程量而实验结果应是状态量且初速度已经给定，因此我们要的实验结果正质点的末速度${\boldsymbol{v}_1}$。<br>在这一过程中，如若限制这一过程中力的作用距离和作用时间，则无论过程始末、惯性参考系的选择如何，观察到的实验结果${\boldsymbol{v}_1}$都将相同。<br>我们称这种情况下，过程中的所有量都不变，过程完全守恒，这样的实验是完全等同的。诚然，我们希望机械运动有这样的守恒，但现实中的过程却不可能都是如此，因此这样的完全守恒却是局限的，它将限制过程完全相同，研究这样的过程是没有现实意义的，因为实验组和对照组将完全相同。<br>但若对作用距离和作用时间都不限制，那么力将可以随意变化，观察到的实验结果${\boldsymbol{v}_1}$也将随意变化，很显然，它是一个任意量。</p>
+<h2 id="不完全守恒-Incompleteness-功-Work-与能-Energy-冲量-Impulse-与动量-Momentum"><a href="#不完全守恒-Incompleteness-功-Work-与能-Energy-冲量-Impulse-与动量-Momentum" class="headerlink" title="不完全守恒(Incompleteness) 功(Work)与能(Energy) 冲量(Impulse)与动量(Momentum)"></a>不完全守恒(Incompleteness) 功(Work)与能(Energy) 冲量(Impulse)与动量(Momentum)</h2><p>任意与完全守恒的局限性将使得我们寻找对应“不完全守恒”的守恒量。对比上面的研究，我们不应完全限制所有物理量、也不能毫无限制。我们所需要的守恒量，并不是完全的不守恒，也不是完全的守恒。我们需要这种守恒尽可能地容许其他量的可变性。<br>因此，暂不限制力的作用时间，而将另外的力和作用距离调整为一对依赖变量，最简单的方法，就是对力求位移的积分：</p>
+<script type="math/tex; mode=display">W = \int {\boldsymbol{F} \cdot d{\boldsymbol{s}}}</script><p>同时，因为我们讨论的过程中力和位移是同向的，所以只选取同向分量就足够了，即加上箭头符号：</p>
+<script type="math/tex; mode=display">W = \int {\boldsymbol{\vec F} \cdot d{\boldsymbol{\vec s}}}</script><p>亦即$W = {\boldsymbol{F}} \cdot {\boldsymbol{s}}$，在$W$保持不变时，${\boldsymbol{F}}$和${\boldsymbol{s}}$成反比，在这样的过程中，质点的速度变化量是确定的：</p>
+<script type="math/tex; mode=display">\Delta {\boldsymbol{v}} = {\boldsymbol{v}_1} - {\boldsymbol{v}_0} = \sqrt {2{\boldsymbol{as}} - {\boldsymbol{v}}_0^2}  - {\boldsymbol{v}_0} = \sqrt {\frac{2W}{m} - \boldsymbol{v}_0^2}  - {\boldsymbol{v}_0}</script><p>因为在上式中，$W,m,{\boldsymbol{v}_0}$都是确定的物理量，而时间在这个过程中则是被我们忽略考虑的，因此它将是可变的。<br>这样定义出来的守恒量$W$就是我们所说的“功”了，不过联系到实际当中，一个保持匀速直线运动状态的不受力的物体，似乎总保持着某种“对其他物体做功的能力”，而倘若一个物体对另一个物体做功了，“被做功”的物体将会获得部分或全部这种能力。<br>显然我们仍需定义一个状态量，它就表示这种“可以对其他物体做功的能力”即“内禀的功”，我们称之为“动能(Kinetic Energy)”，记作${E_k}$。功和动能的量纲数是相等的，为$\dim W = {L^2}M{T^{ - 2}}$，单位为纪念在功能转化方面研究做出重要贡献的物理学家焦耳(<em>Joule</em>)而被定义为焦(J)：$1J = 1kg \cdot {m^2}/{s^2}$。<br>正因为在我们所研究的过程中时间是可变的，因而只要质点所受的功是确定的，则无论过程在时间上如何变化，观察到的实验结果${\boldsymbol{v}_1}$都将相同，这正符合守恒量的定义，又符合我们寻找的“不完全守恒”。对应地，我们将这种在某个守恒量不变的情况下实验结果不依赖于过程始末的选择的特性称为该守恒量具有时间平移不变性。</p>
+<p>但很容易发现这种“不完全守恒”亦在某个方面将表现不守恒，在选择不同的惯性参考系时，这种不变性将被打破，因为一个质点的位移是相对的，而功的表达式中出现了位移${\boldsymbol{s}}$。所以，在机械运动过程中时间平移不变性只能代表一个方面。<br>类似地，还应该有空间平移不变性，它指某个物理量的守恒不依赖于惯性参考系的选择，机械运动的守恒，正还需要这样一个满足空间平移不变性的物理量。<br>与研究时间平移不变性类似地，我们从另一方面着手研究，不限制力的作用距离，而将另外的力和作用时间调整为一对依赖变量，即对力求时间的积分：</p>
+<script type="math/tex; mode=display">{\boldsymbol{I}} = \int {\boldsymbol{F}dt}</script><p>同样地有${\mathbf{I}} = {\mathbf{F}} \cdot t$，在${\boldsymbol{I}}$保持不变时，${\boldsymbol{F}}$和$t$成反比，同样可以验证在这一过程中，质点的速度变化量是确定的：</p>
+<script type="math/tex; mode=display">\Delta {\boldsymbol{v}} = {\boldsymbol{a}}t = \frac{\boldsymbol{I}}{m}</script><p>因为在上式中${\boldsymbol{I}},m,{\boldsymbol{v}_0}$都是确定的物理量，反之位移则是被忽略考虑的可变量。<br>这样定义出来的守恒量${\boldsymbol{I}}$就是我们所说的“冲量”了，它与功同样是一个过程量。但因为冲量与功同样具有某种可以内禀的属性，我们也需要为之定义相应的状态量，称之为“动量”，记作${\boldsymbol{p}}$。冲量、动量的量纲都为<script type="math/tex">LM{T^{ - 1}}</script>。<br>可以验证动量正是具有空间平移不变性的守恒量：在我们所研究的过程中，只要质点的所受的冲量是确定的，则无论惯性参考系的选择如何，观察到的实验结果${\boldsymbol{v}_1}$都将相同，而且这结果不依赖于惯性参考系的选择。但它却不具有时间平移不变性，因为在动量的表达式中出现了时间$t$。</p>
+<h2 id="动能定理-Kinetic-Energy-Theorem-与动量定理-Momentum-Theorem"><a href="#动能定理-Kinetic-Energy-Theorem-与动量定理-Momentum-Theorem" class="headerlink" title="动能定理(Kinetic Energy Theorem)与动量定理(Momentum Theorem)"></a>动能定理(Kinetic Energy Theorem)与动量定理(Momentum Theorem)</h2><p>在定义了功的同时，我们定义了一个与之对应的状态量动能${E_k}$，事实上可以发现：</p>
+<script type="math/tex; mode=display">W = \int {\boldsymbol{F} \cdot d{\boldsymbol{s}}} \xrightarrow{\boldsymbol{F} = m{\boldsymbol{a}},{\boldsymbol{s}} = {\boldsymbol{v}}t}\int {\frac{md{\boldsymbol{v}}}{dt} \cdot {\boldsymbol{v}}dt}  = \int {m{\boldsymbol{v}} \cdot d{\boldsymbol{v}}}  = \frac{1}{2}\int {md({\boldsymbol{v}}^2)}  = \frac{1}{2}\Delta m{\boldsymbol{v}^2} = \Delta {E_k}</script><script type="math/tex; mode=display">\Rightarrow {E_k} = \frac{1}{2}m{\boldsymbol{v}^2}</script><p>这表明：<em><font face="Kaiti">在一个纯机械运动过程中，物体所做的功等于其动能的变化率：</font></em></p>
+<script type="math/tex; mode=display">W = \Delta {E_k}</script><p>此即动能定理。</p>
+<p>类似地还有动量定理，它可以由量纲分析和牛顿第二定律导出：</p>
+<script type="math/tex; mode=display">\dim {\boldsymbol{p}} = LM{T^{ - 1}}</script><script type="math/tex; mode=display">\begin{align*} {\boldsymbol{F}} &= m{\boldsymbol{a}} = m\frac{\Delta {\boldsymbol{v}}}{\Delta t} \\&= \frac{m{\boldsymbol{v}}' - m{\boldsymbol{v}}}{\Delta t} \Rightarrow {\boldsymbol{F}}t = {\boldsymbol{p}}' - {\boldsymbol{p}} \end{align*}</script><p>即：</p>
+<script type="math/tex; mode=display">{\boldsymbol{I}} = \Delta {\boldsymbol{p}}</script><p>此即动量定理。</p>
+<h2 id="能量守恒定律-Conservation-of-Energy-与动量守恒定律-Conservation-of-Momentum"><a href="#能量守恒定律-Conservation-of-Energy-与动量守恒定律-Conservation-of-Momentum" class="headerlink" title="能量守恒定律(Conservation of Energy)与动量守恒定律(Conservation of Momentum)"></a>能量守恒定律(Conservation of Energy)与动量守恒定律(Conservation of Momentum)</h2><p>前面的讨论中，我们已经得出，在机械运动过程中，功是动能的变化量，而冲量是动量的变化量。事实上更进一步地，由牛顿第三定律：<em><font face="Kaiti">一个物体受力的过程中，必然有另一个物体对其施力，两个物体是相互作用的；当两个物体相互作用时，彼此施于对方的力，其大小相等、方向相反。</font></em><br>一个动能变化或动量变化的过程中，总伴随着两个物体相互作用，而在这个过程中，一个物体动能或动量的增加，总伴随着另一个物体动能或动量的减少，所减少的部分正等于所增加的部分。这两条规律分别称为动能守恒和动量守恒。</p>
+<p>值得注意的是能量，事实上在微观世界中，微观粒子之间的做功也是普遍存在的，这种在微观粒子间的动能变化中才被体现的能量，在宏观中被称为热量，更一般地还有光能、电能、化学能等形式，它们都是与动能类似的、可以相互转化的，统称为能量(Energy)。能量也是守恒地，在经典物理学中有更一般的能量守恒定律：<em><font face="Kaiti">一个封闭的系统总能量保持不变。</font></em></p>
+<p>动量守恒定律：<em><font face="Kaiti">一个不受外力或所受合力为零的系统的总动量保持不变。</font></em></p>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>力在机械运动过程中是完全不守恒的，动能和动量是机械运动过程中与力关系密切的两个守恒量，前者具有时间平移不变性而不具有空间平移不变性，后者具有空间平移不变性而不具有时间平移不变性，分别从空间和时间两个方面完善了力的守恒性。它们的守恒分别适用于不同的空间、时间条件。</p>
+<h2 id="相对论中的动能定理和动量定理"><a href="#相对论中的动能定理和动量定理" class="headerlink" title="相对论中的动能定理和动量定理"></a>相对论中的动能定理和动量定理</h2><p>经典物理学之后的又一次变革是爱因斯坦(<em>Einstein</em>)相对论(Relativity)的提出。在狭义相对论中，爱因斯坦主要提出了两种观点，即“光速不变原理”和“相对性原理”。<br>其中，“光速不变原理”指出，无论观察者立足于任何惯性参考系，光在真空中的传播速度之于观察者都将是一个不变的常数，这个常数就是光速$c = 299792458m/s$。<br>在相对论力学中，动量被定义为：</p>
+<script type="math/tex; mode=display">{\boldsymbol{p}} = \gamma m{\boldsymbol{u}} = \frac{m{\boldsymbol{u}}}{\sqrt {1 - {({\boldsymbol{u}}/c)}^2} }</script><p>其中$m$表示物体的静止质量，${\boldsymbol{u}}$则表示物体与观察者的相对速度，$c$表示光速。<br>其中相对速度的引入，正自洽了“光速不变原理”，而常数$\gamma$则表示洛伦兹因子。</p>
+<p>这里还需先指出一点：<font face="Kaiti">动能是速度对动量的积分。</font><br>由数学上的推导，这一点是显然的。由这一结论可以导出相对论力学中的动能表达式，由分部积分法：</p>
+<script type="math/tex; mode=display">{E_k} = \int {\boldsymbol{u} \cdot d{\boldsymbol{p}}}  = \int {\boldsymbol{u} \cdot d(\gamma m{\boldsymbol{u}})}  = \gamma m{\boldsymbol{u}} \cdot {\boldsymbol{u}} - \int {\gamma m{\boldsymbol{u}} \cdot d{\boldsymbol{u}}}  = \gamma m{\boldsymbol{u}^2} - \frac{1}{2}\int {\gamma md({\boldsymbol{u}}^2)}</script><p>再将$\gamma  = 1/\sqrt {1 - {({\boldsymbol{u}}/c)}^2}$代入其中：</p>
+<script type="math/tex; mode=display">{E_k} = \gamma m{\boldsymbol{u}^2} + \frac{1}{2}m{c^2}\int {\gamma d(1 - {\boldsymbol{u}}^2/{c^2})}  = \gamma m{\boldsymbol{u}^2} + m{c^2}\sqrt {1 - {({\boldsymbol{u}}/c)}^2}  - {E_0} = \gamma m{c^2} - {E_0}</script><p>令${\boldsymbol{u}} = 0$此时有${E_k} = 0,\gamma  = 1$，可以算出积分常数：</p>
+<script type="math/tex; mode=display">{E_0} = m{c^2}</script><p>这样就给出了动能在相对论力学中的表达式：</p>
+<script type="math/tex; mode=display">{E_k} = \gamma m{c^2} - m{c^2} = \frac{m{c^2}}{\sqrt {1 - {({\boldsymbol{u}}/c)}^2} } - m{c^2}</script><h2 id="扩展：空间旋转不变性与角动量守恒"><a href="#扩展：空间旋转不变性与角动量守恒" class="headerlink" title="扩展：空间旋转不变性与角动量守恒"></a>扩展：空间旋转不变性与角动量守恒</h2><h3 id="保守力-Conservative-Force"><a href="#保守力-Conservative-Force" class="headerlink" title="保守力(Conservative Force)"></a>保守力(Conservative Force)</h3><p>作者偷懒了一下。。。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+        <div>
+          <hr>
+          <p>
+            本站所有文章均为原创，如果您觉得我的文章质量很好，阅读后对您解决问题提供了较大的帮助，可以点击下面的“分享”按钮把这篇文章分享出去让更多人看到，让更多人看到；亦不妨小额资助我一下，您的鼓励将是我创作文章的不竭动力。
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="/images/rewards/wechatpay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/wechatpay.jpg" width="200" height="200">
+                  </a>
+                </td>
+                <td>
+                  <a href="/images/rewards/alipay.jpg" class="fancybox fancybox.image" rel="group">
+                    <img border="0" src="/images/rewards/alipay.jpg" width="200" height="200">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+      
+      
+      
+        <div class="post-tags">
+          
+            <a href="/tags/醉仙阁杂谈/" rel="tag"># 醉仙阁杂谈</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/" rel="next" title="位移、速度、加速度与急动度">
+                <i class="fa fa-chevron-left"></i> 位移、速度、加速度与急动度
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/13/2018-03-13--Interpretation-of-Subculture-by-Memetics/" rel="prev" title="社会科学学习笔记(一)：利用模因论分析亚文化的过程一般化">
+                社会科学学习笔记(一)：利用模因论分析亚文化的过程一般化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <hr>
+  <h1>撰写评论</h1>
+  <p>
+    我诚心希望您在阅读后把阅读感受撰写成评论，您的评论将是我创作的宝贵意见与重要参考。如果您有私密建议或私密话题亦可撰写成邮件发送到<a href="mailto:OnceBeta@hotmail.com">我的邮箱</a>。
+  </p>
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="OnceBeta" />
+            
+              <p class="site-author-name" itemprop="name">OnceBeta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/oncebeta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="oncebeta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/lin.rh.50" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/2918949607/home" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引子"><span class="nav-number">1.</span> <span class="nav-text">引子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#力-Force"><span class="nav-number">2.</span> <span class="nav-text">力(Force)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#惯性-Inertia"><span class="nav-number">3.</span> <span class="nav-text">惯性(Inertia)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#守恒量-Conserved-Quantity"><span class="nav-number">4.</span> <span class="nav-text">守恒量(Conserved Quantity)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#任意-Arbitrariness-与完全守恒-Constant"><span class="nav-number">4.1.</span> <span class="nav-text">任意(Arbitrariness)与完全守恒(Constant)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不完全守恒-Incompleteness-功-Work-与能-Energy-冲量-Impulse-与动量-Momentum"><span class="nav-number">4.2.</span> <span class="nav-text">不完全守恒(Incompleteness) 功(Work)与能(Energy) 冲量(Impulse)与动量(Momentum)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动能定理-Kinetic-Energy-Theorem-与动量定理-Momentum-Theorem"><span class="nav-number">4.3.</span> <span class="nav-text">动能定理(Kinetic Energy Theorem)与动量定理(Momentum Theorem)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#能量守恒定律-Conservation-of-Energy-与动量守恒定律-Conservation-of-Momentum"><span class="nav-number">4.4.</span> <span class="nav-text">能量守恒定律(Conservation of Energy)与动量守恒定律(Conservation of Momentum)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补充"><span class="nav-number">5.</span> <span class="nav-text">补充</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#相对论中的动能定理和动量定理"><span class="nav-number">5.1.</span> <span class="nav-text">相对论中的动能定理和动量定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展：空间旋转不变性与角动量守恒"><span class="nav-number">5.2.</span> <span class="nav-text">扩展：空间旋转不变性与角动量守恒</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#保守力-Conservative-Force"><span class="nav-number">5.2.1.</span> <span class="nav-text">保守力(Conservative Force)</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OnceBeta</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+    Hosted by 
+    <a href="https://pages.github.com">GitHub</a>
+    <span class="post-meta-divider">|</span>
+  </div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme by &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4
+  </div>
+
+
+<span>
+  <span class="post-meta-divider">|</span>
+  您是本站第
+  <span id="busuanzi_value_site_pv"></span>
+  位访客
+</span>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hjoVWc2cl5qScUEVyqiO14Ps-gzGzoHsz',
+        appKey: 'cm0snbwdBDPpqj4RRn4hFMs5',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("63cdLIdJfUz6cngclV4kxtpH-gzGzoHsz", "FkQxFe7o9JHcqWcn4fmtkdQr");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>

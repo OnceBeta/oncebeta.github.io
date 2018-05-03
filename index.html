@@ -1,0 +1,2571 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="醉仙阁">
+<meta property="og:url" content="http://once4623.site/index.html">
+<meta property="og:site_name" content="醉仙阁">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="醉仙阁">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://once4623.site/"/>
+
+
+
+
+
+  <title>醉仙阁</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx] + "+1");
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "red",
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function() {
+                $i.remove();
+            });
+        });
+    });
+</script>
+
+<style type="text/css">
+    #img {
+	    position: absolute;
+	    background: url(/threeColumns2/images/window_ks.jpg) no-repeat;
+        width: 250px;
+        height: 125px;
+    }
+    #img a {
+        text-decoration: none;
+        color: green;
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        padding: 95px 5px;
+    }
+    #img .reset {
+        position: absolute;
+        top: -17px;
+        right: 1px;
+        font-size: 12px;
+    }
+    img .floating {
+        width: 250px;
+        height: 125px;
+        left: 0px;
+        top: 0px;
+        filter: grayscale(100%);
+    }
+    @media (max-width: 768px) {
+        #img {
+            display: none !important;
+        }
+    }
+</style>
+<script language="javascript" src="/plugin/floating.js"></script>
+<div  style="position: fixed; z-index: 999999; deploy: none; display: none;">
+  <div id="img">
+      <img class="floating" onclick="window.location.assign('https://www.baidu.com');" src="/images/attachments/floating.jpg">
+    <div class="reset">关闭</div>
+  </div>
+</div>
+<script language="javascript" type="text/javascript">
+    //$("#img").imgFloat();   //不给参数默认（speed:10,xPos:0,yPos:0） 
+    $("#img").imgFloat({
+        speed : 5,
+        xPos : 10,
+        yPos : 10,
+    });
+    $(".reset").click(function() {
+        $("#img").css("display", "none");
+    });
+</script>
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">醉仙阁</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">孤亭一座，美酒一杯；故人一梦，笙歌一曲。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-notes">
+          <a href="/notes/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-notes"></i> <br />
+            
+            札记
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+
+  <div class="site-search">
+    <script type="text/javascript" src="/plugin/search.js"></script>
+    <form class="site-search-form">
+      <div class="local-search-icon"></div>
+      <input type="text" id="local-search-input" class="st-search-input">
+    </form>
+    <div id="local-search-result" class="local-search-result-cls"></div>
+    <script type="text/javascript" id="local.search.active">
+        var inputArea       = document.querySelector("#local-search-input");
+        inputArea.onclick   = function(){ getSearchFile(); this.onclick = null }
+        inputArea.onkeydown = function(){ if(event.keyCode == 13) return false }
+    </script>
+  </div>
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2018/04/30/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/30/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-30T17:14:19+08:00">
+                2018-04-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/30/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/30/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/04/30/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2018/03/13/2018-03-13--Interpretation-of-Subculture-by-Memetics/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/13/2018-03-13--Interpretation-of-Subculture-by-Memetics/" itemprop="url">社会科学学习笔记(一)：利用模因论分析亚文化的过程一般化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-13T15:33:01+08:00">
+                2018-03-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/13/2018-03-13--Interpretation-of-Subculture-by-Memetics/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/13/2018-03-13--Interpretation-of-Subculture-by-Memetics/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/03/13/2018-03-13--Interpretation-of-Subculture-by-Memetics/" class="leancloud_visitors" data-flag-title="社会科学学习笔记(一)：利用模因论分析亚文化的过程一般化">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>网络亚文化的不断涌现和迅速发展是时代信息化发展的趋势与表现之一，模因论(Memetics)就是一个伴随着这一背景而迅速发展的学科，这一理论主张用类似于生物学“基因(Gene)”的概念“模因(Meme)”来解释人类文化的各种现象，认为文化的某些行为(如发展与传播等)与基因的行为具有较高的相似性，在这些方面二者是可以类比的。<br>我在近期阅读了十数篇这一方面的论文，对其中某些观点表示认同，亦对这一学科的某些方面存有不少疑问。本文旨在总结用利用模因论解释亚文化现象的一套方法。</p>
+<h1 id="模因论-Memetics"><a href="#模因论-Memetics" class="headerlink" title="模因论(Memetics)"></a>模因论(Memetics)</h1><h2 id="模因论的起源和基本观点"><a href="#模因论的起源和基本观点" class="headerlink" title="模因论的起源和基本观点"></a>模因论的起源和基本观点</h2><p>模因(Meme)的概念最早是在1976年由英国行为学家理查德·道金斯(Richard Dawkins)在其《自私的基因(The Selfish Gene)》中提出的。他认为，基因(Gene)是生物进化的基本单位，其本质是具有复制行为的复制因子，它们通过不断复制、相互竞争而不断进化。在讨论过后，他猜想，在文化的发展过程中也存在行为类似于基因的复制因子，并将之称为模因，是文化传播的基本单位。这是公认的模因论的起源。</p>
+<h2 id="模因论的发展"><a href="#模因论的发展" class="headerlink" title="模因论的发展"></a>模因论的发展</h2><p>模因论是一门以文化为研究对象的行为科学，它显然不属于一般的生物学或博物学，尽管模因是一个类比于基因的概念。事实上模因论后来被划归到传播学，因为文化的发展本就是一个与传播密切相关的过程。<br>随着其他行为科学学科的发展，模因论已经被逐渐应用到了研究各种信息传播的过程，模因的概念也得到了扩展，后来认为通过各种媒介传播的信息都是模因，只要它们有进行个体间复制行为(Replication Behavior between Individuals)的能力。</p>
+<h1 id="亚文化-Subculture"><a href="#亚文化-Subculture" class="headerlink" title="亚文化(Subculture)"></a>亚文化(Subculture)</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>在文化学中，亚文化是指与主流文化(Culture，下文“文化”一般指“主流文化”，在特定语境下可作为“主流文化”和“亚文化”二者的统称)相对应的、又在某些方面与主流文化有一定相似性的特定价值系统。<br>然而不可否认的是，亚文化对文化群体中个体的重要程度并不一定亚于文化，甚至也在其所主导的行为习惯或价值理念的某些方面也起着主要的影响作用。</p>
+<h2 id="亚文化与文化的差异"><a href="#亚文化与文化的差异" class="headerlink" title="亚文化与文化的差异"></a>亚文化与文化的差异</h2><p>主流观点认为，一个体系完善的主流文化主要包括物质文化(Material Culture)、行为文化(Behavior Culture)和精神文化(Spirit Culture)，表现为一个完整的社会价值系统的总和，不同文化间的差异本质上源于其所表现的不同时代或地域的哲学思想的差异。正是这些原因，决定了文化的广泛性，及一段较长时期、一个较大地域内的绝大多数个体。<br>而亚文化则一般仅仅包括物质文化、制度文化、精神文化三者中的一者，或主要内容集中分布在其中一者，因此亚文化所表现对应的价值系统是不完整的，不同亚文化间的差异主要体现在某些特定行为习惯与价值理念间的差异，因此亚文化的文化群体一般较小，且结构较松散，广泛性较差。</p>
+<p>古代社会具有主流文化本身并未高度发展、文明并未高度发达等特点，排斥作用在不同文化间较为显著，甚至在文化内也存在，并不利于亚文化的产生与发展，因此一般意义上的亚文化主要产生于主流文化较为发达的近现代，并不具有较长的历史。<br>受现代信息技术较发达的影响，大多数亚文化的一个显著特点就是以网络为载体，这显著降低了地域对亚文化的局限性，因此亚文化又具有文化群体在地域上分散的特点；但由于亚文化对主流文化的依赖性，一般亚文化的地域分布仍受局限于其主流文化的地域分布。<br>另一方面，分析亚文化的目的也往往与主流文化不同，分析主流文化往往是为了完善文化史或行政史，分析亚文化的目的则一般是以获得社会统计学资料为目的的。<br>正是由于亚文化和主流文化的种种差异，我们在分析亚文化时并不能拘泥于对文化的分析方法，而应当制定一套更为科学的分析方法来。</p>
+<h1 id="模因论研究亚文化的一般步骤"><a href="#模因论研究亚文化的一般步骤" class="headerlink" title="模因论研究亚文化的一般步骤"></a>模因论研究亚文化的一般步骤</h1><p>但亚文化与主流文化在发展规律等方面也有着一定的相似性，因此它们的分析方法也应当有一定的可类比性，藉此，我们将以二者的相似性为主，差异性为辅，来制定亚文化的一般分析方法。</p>
+<h2 id="步骤一：分析起源"><a href="#步骤一：分析起源" class="headerlink" title="步骤一：分析起源"></a>步骤一：分析起源</h2><p>文化起源的时期和地域对文化有着极其重要的影响，甚至在某些方面可以说是决定性的，这点亚文化也是如此。故分析文化或亚文化的起源及其背景，是进一步分析其各个方面的前提。<br>另外还应该注意到亚文化在时间尺度较短，在时间上对亚文化的定位应比文化更加精确。</p>
+<h2 id="步骤二：建立模因体系并确定其结构"><a href="#步骤二：建立模因体系并确定其结构" class="headerlink" title="步骤二：建立模因体系并确定其结构"></a>步骤二：建立模因体系并确定其结构</h2><p>模因论认为，模因和基因具有类似的行为，文化是在模因的复制和变异中发展的，模因复制和变异的过程也是以优胜劣汰为原则的，优秀的文化具有优秀的模因，以至于在发展的过程中得以保存，那些不再适宜的文化则会被淘汰。<br>因此，建立模因体系和结构就好比对基因进行建模时将基因划分为若干个区段再逐一拆解，是进行进一步分析的前提。<br>但必须要注意到模因和基因也有着显著的差异：基因的主体DNA或RNA是一维的双螺旋或单一的链状结构，而一种文化的模因体系结构却常常是多元化的；基因的传播过程是简单的复制行为，而模因的传播过程则是基于模仿的复制行为。因此建立模因体系的过程并不能像基因建模那样直接，我们通常不像分析基因那样注重于对单一模因的进行分析，而主要注意模因间的相互关系。<br>对此，建立模因体系的方法一般是找出根本模因和节点模因，再根据根本模因和节点模因建立树状结构。通常选取一种文化起源之初时期的几个模因中对文化较具代表性的一个作为根本模因；选取模因变异前后的一个或几个模因作为节点模因，它们对一种文化的模因体系结构化具有重要意义。</p>
+<h2 id="步骤三：确定其类型及特征"><a href="#步骤三：确定其类型及特征" class="headerlink" title="步骤三：确定其类型及特征"></a>步骤三：确定其类型及特征</h2><p>这里必须强调的是，主流文化在时间跨度、空间跨度、群体跨度上都有广泛性；而亚文化则集中分布于某一有特定行为习惯或价值理念的群体，在时间和空间亦有显著不同于文化的分布，所以在分析亚文化时，因此在分析时要确认其具体类型而不可将其与文化同等对待。<br>确定一个亚文化的类型的方法一般是对其进行分类，分类依据可以是其时间分布特征、空间分布特征、文化群体特征等，进行这样的分类可以帮助我们更好地定位一个亚文化。<br>这一步还有一个目的就是初步完善一些统计学数据，借此可以估算亚文化的影响等。</p>
+<h2 id="步骤三：分析根本模因及产生背景"><a href="#步骤三：分析根本模因及产生背景" class="headerlink" title="步骤三：分析根本模因及产生背景"></a>步骤三：分析根本模因及产生背景</h2><p>根本模因通常由另一个文化或亚文化的模因发生变异而产生，也可以产生于迷思(Myth)。迷思也是传播学的一个概念，模因论主张将其类比于基因的“突变(Mutation)”，可简单地将其释义为模因不明机制的突然变异行为。<br>结合根本模因和起源背景，可以较系统地阐述出文化的产生较早期的发展过程。最好可以结合文化的起源背景对其根本模因的变异或迷思原因做出合理的阐述。</p>
+<h2 id="步骤四：分析模因的复制与变异过程"><a href="#步骤四：分析模因的复制与变异过程" class="headerlink" title="步骤四：分析模因的复制与变异过程"></a>步骤四：分析模因的复制与变异过程</h2><p>模因的复制是文化传播的主要方式，模因的变异则是文化发展的主要方式。在建立起模因体系的结构后，可以对关联较大的模因的关系进行分析，再了解模因发生变异的原因，这对进一步完善模因体系的结构亦是不可或缺的。</p>
+<h3 id="模因的复制：主要分析传播载体和传播效应-Effect"><a href="#模因的复制：主要分析传播载体和传播效应-Effect" class="headerlink" title="模因的复制：主要分析传播载体和传播效应(Effect)"></a>模因的复制：主要分析传播载体和传播效应(Effect)</h3><p>需注意模因的复制行为和基因的复制行为有着根本性差异，模因的复制行为不是取决于它自身的，而是取决于个体对其接受与否。研究模因的复制可以大致等同于研究文化群体，借此可以大致分析出文化的发展方向。</p>
+<h3 id="模因的变异"><a href="#模因的变异" class="headerlink" title="模因的变异"></a>模因的变异</h3><p>模因的变异主要是通过以下两种方式来完成的：</p>
+<ol>
+<li>分化(Differentiation)：一个模因在复制后可以被不同的个体进行迷思，迷思的内容自然可以是不尽相同的，当一个模因发生了不同的迷思后，产生的多个不同的模因又各自进行复制，我们就说这个模因发生了分化。</li>
+<li>进化(Evolution)：一个模因在不断地复制后，逐渐与初始模因不同，这一过程我们就说这个模因发生了进化。</li>
+</ol>
+<p>进化与分化是两种截然不同的变异方式，分化通常具有突发性，而进化则具有进程性；分化使模因的含义丰富化，而进化则主要改变模因的单一含义。<br>模因的变异行为也与基因的变异行为有着不同的机制，基因的变异是完全随机的，而模因的变异确是有选择性的，它依赖于人的思维模式和价值理念。</p>
+<h3 id="符号系统-Semiotic-System"><a href="#符号系统-Semiotic-System" class="headerlink" title="符号系统(Semiotic System)"></a>符号系统(Semiotic System)</h3><p>相比主流文化，符号在亚文化中拥有更重要的地位，大多数亚文化都是以其寄生的主流文化的语言文字形成符号的，而且是一些特定的语言文字，它们通常是发生了变异或迷思的具有新的特征的模因，构成该亚文化群体间特有的符号系统，即“黑话(Argot)”。这些符号不仅具有模因的特征，能进行复制或变异；还具有高度公式化等符号的特征。这些特征也决定了符号模因与隐性模因相比，具有复制、变异速度快的特点，因此在分析时对它们要尤其注意，甚至对符号系统庞大的亚文化，还可以对其符号系统建立单一结构。<br>对符号系统的分析则主要是依靠符号语言学来完成的，这一过程一般由无限符号过程理论来完成，通过模拟符号模因的变异过程，可以把握整个符号系统的演化规律，进而得到整个亚文化的演化规律。</p>
+<h2 id="步骤五：分析亚文化群体的行为习惯与价值理念"><a href="#步骤五：分析亚文化群体的行为习惯与价值理念" class="headerlink" title="步骤五：分析亚文化群体的行为习惯与价值理念"></a>步骤五：分析亚文化群体的行为习惯与价值理念</h2><p>分析模因体系有利于较准确地确定亚文化的定位及其发展过程，研究亚文化对其文化群体的作用往往才是目的所在。而特定的行为习惯与价值理念是亚文化群体较为主要的两个共同特征，亦是亚文化对其文化群体所产生影响较为主要的两个方面。<br>对此，我们主要是通过分析模因所确定的文化群体间的相互作用来完成的，而这涉及了一部分社会心理学和行为心理学的统计和分析。<br>这一分析有助于明确亚文化对其文化群体的反作用，从而提出有利于亚文化健康发展的导向。</p>
+<h1 id="模因论的局限性"><a href="#模因论的局限性" class="headerlink" title="模因论的局限性"></a>模因论的局限性</h1>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/" itemprop="url">动能与动量</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T13:22:57+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Physics/" itemprop="url" rel="index">
+                    <span itemprop="name">Physics</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/" class="leancloud_visitors" data-flag-title="动能与动量">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>与友人闲聊时谈起动能与动量，不得不说，在不假思索的情况下，很难明确地阐述出二者的区别。于是赶紧阅了几篇资料、打了几页草稿，才撰出此文，应该能较为正确地回答这一问题了。</p>
+<h1 id="力-Force"><a href="#力-Force" class="headerlink" title="力(Force)"></a>力(Force)</h1><p>在经典力学中，力被定义为导致物体速度发生改变的物理量。在经历速度到加速度再到力的艰难探索，牛顿(<em>Newton</em>)最终确定了它的量纲为$LM{T^{ - 2}}$，即：</p>
+<script type="math/tex; mode=display">1N = 1kg \cdot m/{s^2}</script><p>(<font face="Kaiti">注：单位的符号$N$用来纪念经典力学的奠基人牛顿。</font>)<br>并通过大量实验发现并论证了牛顿第二定律(Newton’s Second Law)：<br><em><font face="Kaiti">物体在受力的情况下运动状态会发生改变，产生一个与其质量成反比、与其所受合力成正比的加速度。</font></em></p>
+<script type="math/tex; mode=display">{\boldsymbol{F}} = m{\boldsymbol{a}}</script>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/15/2017-10-15--Kinetic-Energy-and-Momentum/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/" itemprop="url">位移、速度、加速度与急动度</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-11T22:35:26+08:00">
+                2017-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Physics/" itemprop="url" rel="index">
+                    <span itemprop="name">Physics</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/" class="leancloud_visitors" data-flag-title="位移、速度、加速度与急动度">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>今日上物理课，先生讲到加速度，不禁又想起三年前曾许久纠结在导数的定义上的自己，又想起当时那篇只写了开头却迟迟写不出后笔的博文，是时候完成它了，附上自己的一些新的见解和认知。</p>
+<h1 id="时间-Time-与时刻"><a href="#时间-Time-与时刻" class="headerlink" title="时间(Time)与时刻"></a>时间(Time)与时刻</h1><p><strong>时间</strong>是任一物理过程的纵向尺度，用以衡量事件发生的先后顺序。目前主流的时间的定义是爱因斯坦的相对论中所提出的，时间(时间尺度)与空间(距离尺度)构成四维时空这一宇宙的基本结构。<br>在此基础上，我们定义铯原子的一次固有微波震荡的时间尺度为$1/9192631770s$，即在$1s$内，铯原子将发生9192631770次固有微波震荡。<br><strong>时刻</strong>是一段连续的时间上的一点，每个时刻都对应一个事件或多个事件的发生，亦对应着物理系统的某一状态。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/11/2017-10-11--Displacement-Velocity-Acceleration-Jerk/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/" itemprop="url">在Hexo中使用LaTeX语法输入数学公式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-03T14:02:04+08:00">
+                2017-10-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Computer-Skill/" itemprop="url" rel="index">
+                    <span itemprop="name">Computer Skill</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/" class="leancloud_visitors" data-flag-title="在Hexo中使用LaTeX语法输入数学公式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>作为一款以简洁为宗旨的标记语言，HTML的扩展性并不强，其自身也不具有强大的功能。要使用HTML渲染出漂亮的数学公式可以说并非轻而易举，因此大多数人使用截图上传的方式实现在网页上展示数学公式。<br>但前阵子浏览<a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a>，便偶然想到一个问题此多的数学公式，如果都使用截图上传的方式来展现，岂不是太费力气了。这显然是不现实的。<br>原来，对于在网页上展示数学公式这个问题，早已经有前辈开发了具有对应功能的插件来解决了，这便是MathJax。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/10/03/2017-10-04--Use-MathJax-In-Hexo-Next/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/09/28/2017-09-28--The-Difference-Between-Zuo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/28/2017-09-28--The-Difference-Between-Zuo/" itemprop="url">中文语法词义混淆现象(一)：浅谈“作”和“做”的区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-28T20:24:01+08:00">
+                2017-09-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/中文/" itemprop="url" rel="index">
+                    <span itemprop="name">中文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/28/2017-09-28--The-Difference-Between-Zuo/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/28/2017-09-28--The-Difference-Between-Zuo/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/09/28/2017-09-28--The-Difference-Between-Zuo/" class="leancloud_visitors" data-flag-title="中文语法词义混淆现象(一)：浅谈“作”和“做”的区别">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>前几日在一篇报道上看到“做介绍”一词，顿觉心中一丝疑虑一闪而过，于是查阅了大量资料，发现这个问题已是长期存在且难以改变了。先来看一则小资料：<br>&emsp;&emsp;<font face="Kaiti">《现代汉语规范词典》和《人民日报》等主流媒体，均多处采用“做介绍”这一用法。<br>&emsp;&emsp;更有趣的是，《现代汉语词典》中，几乎每一版都就这两个字的用法有推敲和修订，而且多次修订后还出现词典内容前后矛盾的糊涂笑话。</font></p>
+<p>经查阅多方资料与反复推敲比较，笔者基本认同吕叔湘在其所著《现代汉语八百词》一书中提出的意见，即：<br>“<br><em>习惯上，具体东西的制造一般写‘做’；书面语色彩重一点的词语，特别是成语里，一般都写成‘作’；在书面表达时遇到没有把握的词，写‘作’而不写‘做’；而口语表达则因二字同音而不存在争议。</em><br>”<br>但此处亦要提到另一种观点：<br>“<br><em>在官方书籍《现代汉语词典》和《现代汉语规范词典》的数次修订中，纵观其趋势，“做”正在逐渐取代“作”的某些用法，而在口语附属或类口语的书面表达中亦较多使用“做”。</em><br>”
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/28/2017-09-28--The-Difference-Between-Zuo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/09/28/2018-03-11--The-Difference-Between-Despiting-And-Discrimination/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/28/2018-03-11--The-Difference-Between-Despiting-And-Discrimination/" itemprop="url">The Difference between Despising and Discrimination</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-28T20:24:01+08:00">
+                2017-09-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/28/2018-03-11--The-Difference-Between-Despiting-And-Discrimination/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/28/2018-03-11--The-Difference-Between-Despiting-And-Discrimination/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/09/28/2018-03-11--The-Difference-Between-Despiting-And-Discrimination/" class="leancloud_visitors" data-flag-title="The Difference between Despising and Discrimination">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Guiding"><a href="#Guiding" class="headerlink" title="Guiding"></a>Guiding</h1><p>A social critic once said, ‘Despising is an art, but discrimination shows the unwisdom’, It is easy to get from the sentence that two words are worlds apart, but seems hard to show it clearly.</p>
+<h1 id="Dictionary-Explanation"><a href="#Dictionary-Explanation" class="headerlink" title="Dictionary Explanation"></a>Dictionary Explanation</h1><p>despite: to dislike and have no respect for sb/sth<br>discrete: the practice of treating sb or a particular group in society less fairly then the others</p>
+<p>To explain this clearly, I introduced some explanation of the two words from the OED and I’ve shown it above. Noticed that, </p>
+<p>Here it has been emphasized that despising is directed behavior but discrimination more at person or particular group.<br>In other words, one point comforting to our values is that ‘discrimination’ should be despised, but rational despising should be treated with dignity.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/" itemprop="url">黎曼$\zeta$函数简括</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-04T12:04:37+08:00">
+                2017-09-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Math/" itemprop="url" rel="index">
+                    <span itemprop="name">Math</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/" class="leancloud_visitors" data-flag-title="黎曼$\zeta$函数简括">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>相信每一位数学爱好者对黎曼猜想(Riemann Hypothesis)都不会陌生，这是19世纪德国著名数学家黎曼于1859年在论文中提出的一个著名猜想。<br>该论文讨论了当时解析数论素数分布这一热门话题，黎曼在结尾处猜想道：<font face="Kaiti">黎曼$\zeta$函数的所有非平凡零点，都具有$s = \frac{1}{2} + it$的形式</font>；换句话说，所有非平凡零点都在直线$\operatorname{Re} s = \frac{1}{2}$上。<br>这一猜想无数次在大小讲义或学术讨论会上被提到，却迄今悬而未决；单就其重要性而言，无论黎曼猜想被证明或被证伪，都将对数学界、物理学界及其他相关领域带来十分震撼的影响。<br>而很容易注意到，黎曼猜想研究的核心就是黎曼$\zeta$函数。这也正是本文将要介绍的。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/04/2017-09-04--Generalization-Of-Riemann-Zeta-Function/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/08/11/2017-08-11--English-Grammar-Voice-And-Tense/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/11/2017-08-11--English-Grammar-Voice-And-Tense/" itemprop="url">语态和时态Voice and Tense</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-11T15:19:37+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/English/" itemprop="url" rel="index">
+                    <span itemprop="name">English</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/11/2017-08-11--English-Grammar-Voice-And-Tense/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/08/11/2017-08-11--English-Grammar-Voice-And-Tense/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/08/11/2017-08-11--English-Grammar-Voice-And-Tense/" class="leancloud_visitors" data-flag-title="语态和时态Voice and Tense">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>英语中，助动词和谓语动词形式的使用，需要从三个方面上区分并选择，即<strong>语态(Voice)</strong>、<strong>状态(Aspect)</strong>和<strong>时间(Tense, Tense Group)</strong>。而过去将来时则作为一种时间上的复合体，同时需要结合<strong>语气(Mood)</strong>进行区分。</p>
+<h1 id="语态"><a href="#语态" class="headerlink" title="语态"></a>语态</h1><p>语态是英语也是大多数语言中最基础、最简单的部分，从我们最熟悉的中文来理解：“我把他打了”和“他被我打了”就分别是“我打了他”这句话在<strong>主动语态(Active Voice)</strong>和<strong>被动语态(Passive Voice)</strong>下的表达。<br>而在英语中，理论上，每种时态都对应有主动语态和被动语态两种表达，以最简单的一般现在时为例，主动语态和被动语态其谓语动词的变化形式如下：
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/11/2017-08-11--English-Grammar-Voice-And-Tense/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://once4623.site/2017/07/16/2017-07-16--Oxford-Comma/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OnceBeta">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="醉仙阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/16/2017-07-16--Oxford-Comma/" itemprop="url">英语语法歧义现象(一)：牛津逗号(Oxford Comma)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-16T22:35:04+08:00">
+                2017-07-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/English/" itemprop="url" rel="index">
+                    <span itemprop="name">English</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/07/16/2017-07-16--Oxford-Comma/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/07/16/2017-07-16--Oxford-Comma/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/07/16/2017-07-16--Oxford-Comma/" class="leancloud_visitors" data-flag-title="英语语法歧义现象(一)：牛津逗号(Oxford Comma)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>牛津逗号是英语中逗号的一类特殊用法，通常情况下它是指在枚举事物时，出现在and或or等并列连词之前的逗号，如：<br>    &emsp;&emsp;<em>The group consists of two engineers, Jack, and John.</em><br>    &emsp;&emsp;<em>这个小组由两位工程师、杰克和约翰组成。</em><br>在上句中，and前的逗号即是牛津逗号，因牛津大学对其用法和必要性的规范化而得名，由于哈佛大学也曾对其有过类似的规定，故也可称其为“哈佛逗号”，当然这两个名称都并不是它真正的名字，在语言学中它的正式名称是“<strong>序列逗号(Serial Comma)</strong>”。任何事物都有其存在的理由，牛津逗号的存在也是合理的，下面就来介绍它的一些用法。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/16/2017-07-16--Oxford-Comma/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+      
+      
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="OnceBeta" />
+            
+              <p class="site-author-name" itemprop="name">OnceBeta</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/oncebeta" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="oncebeta@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/lin.rh.50" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/2918949607/home" target="_blank" title="新浪微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>新浪微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OnceBeta</span>
+
+  
+</div>
+
+
+  <div class="powered-by">
+    Hosted by 
+    <a href="https://pages.github.com">GitHub</a>
+    <span class="post-meta-divider">|</span>
+  </div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme by &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4
+  </div>
+
+
+<span>
+  <span class="post-meta-divider">|</span>
+  您是本站第
+  <span id="busuanzi_value_site_pv"></span>
+  位访客
+</span>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'hjoVWc2cl5qScUEVyqiO14Ps-gzGzoHsz',
+        appKey: 'cm0snbwdBDPpqj4RRn4hFMs5',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("63cdLIdJfUz6cngclV4kxtpH-gzGzoHsz", "FkQxFe7o9JHcqWcn4fmtkdQr");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
